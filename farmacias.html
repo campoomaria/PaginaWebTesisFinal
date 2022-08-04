@@ -67,19 +67,20 @@
     </header>
     
     <main>
-        <div class="d-flex flex-row m-3 text-center">
-            <div class="col-4">
-                <h2>Farmacias</h2>
-            </div>
+        <h2 class="text-center m-2">Farmacias</h2>
+        <div class="d-flex flex-row m-3 text-center justify-content-around align-items-center">
             <div class="col-8">
                 <form class="d-flex" role="buscar">
-                    <input class="form-control me-2" type="search" placeholder="Buscar Farmacias" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar Farmacia" aria-label="Search">
                     <button class="btn btn-outline-primary" type="submit">Buscar</button>
                 </form>
             </div>
+            <div class="col-1 d-flex flex-column" >
+                <button class="btn btn-outline-primary" type="submit">Nueva Farmacia</button>
+            </div>
         </div>
     
-    <section class="">
+    <section>
             <table class="tabla_farmacia table-bordered border-black ">
                 <thead class="head_table_farmacia">
                     <tr>
@@ -119,10 +120,9 @@
                                   </svg>
                             </button>
                             <button type="button" class="btn btn-outline-primary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
-                                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                </svg>
                             </button>
                         </div>
                         </td>
