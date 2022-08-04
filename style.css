@@ -4,3 +4,11 @@
     box-sizing: border-box;
 }
 
+.imagenlogo{
+width: 100px;
+    height: auto;
+}
+
+.nav_items{
+    font-weight: 700;
+}
