@@ -5,3 +5,6 @@ createApp({
       }
     }
   }).mount('#app')
+
+
+  datosfarmacia:{}
