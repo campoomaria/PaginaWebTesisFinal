@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-.imagenlogo{
-    width: 150px;
+.imagencabecera{
+    width: 430px;
     height: auto;
 }
 
@@ -50,4 +50,21 @@
 }
 .offcanvas-body h1{
     color: black;
+}
+
+.modal-body-farmacia{
+    margin: 15px;
+    
+}
+.formfarmacianueva{
+    margin: 5px;
+    
+}
+
+.div-form-farmacia{
+    margin-bottom: 10px;
+}
+.div-form-farmacia input{
+    height: auto;
+    width: 100%;
 }

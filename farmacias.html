@@ -11,9 +11,8 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
-<body>
+<body  id="app">
     <header>
-
         <nav class="navbar navbar-expand-lg text-white  fixed fs-5 fw-bold" style="background-color: #73c8d3;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
@@ -27,10 +26,10 @@
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">OSPES</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    
+
                     <div class="offcanvas-body">
                         <h1>Ospes</h1>
-                        
+
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 ">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -51,7 +50,8 @@
                         </ul>
                         <button>
                             <svg style="width:36px;height:36px" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z" />
+                                <path fill="currentColor"
+                                    d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z" />
                             </svg>
                         </button>
                     </div>
@@ -70,41 +70,62 @@
             <div class="col-8">
                 <form class="d-flex" role="buscar">
                     <input class="form-control me-2" type="search" placeholder="Buscar Farmacia" aria-label="Search">
-                    <button class="btn btn-outline-dark" type="button">Buscar</button>
+                    <button class="btn btn-secondary" type="button">Buscar</button>
                 </form>
             </div>
-            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Nueva Farmacia
-              </button>
+            </button>
+        </div>
+
+        <!-- Modal para el ingreso de una farmacia nueva -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Nueva Farmacia</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body-farmacia">
+                        
+                        <form action="formfarmacianueva" data-bs-spy="scroll" class="formfarmacianueva d-flex flex-column needs-validation  novalidate">
+                            <div class="div-form-farmacia">
+                                <label for="nombresfarmacia">Nombre:</label>
+                                <input type="text" v-model="nombresfarmacias"  class="form-control" required minlength="4" maxlength="60">                                
+                            </div>
+                            <div class="div-form-farmacia">
+                                <label for="cuilfarmacia">CUIL:</label>
+                                <input type="number" v-model="cuilfarmacia"  class="form-control" required minlength="11" maxlength="11">                                
+                            </div>
+                            <div class="div-form-farmacia">
+                                <label for="domiciliofarmacia">Domicilio:</label>
+                                <input type="text" v-model="domiciliofarmacia" class="form-control" required minlength="4" maxlength="260">                                
+                            </div>
+                            <div class="div-form-farmacia">
+                                <label for="provinciafarmacia">Provincia:</label>
+                                <input type="text" v-model="provinciafarmacia"  class="form-control" required minlength="4" maxlength="20">                                
+                            </div>
+                            <div class="div-form-farmacia">
+                                <label for="localidadfarmacia">Localidad:</label>
+                                <input type="text" v-model="localidadfarmacia" class="form-control" required minlength="4" maxlength="30">                                
+                            </div>
+                            <div class="div-form-farmacia">
+                                <label for="telefonofarmacia">Telefono:</label>
+                                <input type="number" v-model="telefonofarmacia"  class="form-control" required maxlength="11">                                
+                            </div>
+                            <div class="div-form-farmacia">
+                                <label for="emailfarmacia">Email:</label>
+                                <input type="email" v-model="emailfarmacia"  class="form-control" required placeholder="nombre@ejemplo.com">                                
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" aria-label="Show SweetAlert2 success message" @click="alerta" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
             </div>
-
-          
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-
-
+        </div>
 
         <section>
             <table class="tabla_farmacia table-bordered border-black ">
@@ -123,37 +144,38 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="">
-                        <td>123</td>
-                        <td>maria de los angeles</td>
-                        <td>27349531823</td>
-                        <td>lamadrid 23423</td>
-                        <td>Tucuman</td>
-                        <td>San miguel de tucuman</td>
-                        <td>42542346</td>
-                        <td>maria@gmail.com</td>
-                        <td>Activo</td>
+                    <tr v-for="farm in Farmacias">
+                        <td>{{farm.idFarmacia}}</td>
+                        <td>{{farm.farmacia}}</td>
+                        <td>{{farm.cuil}}</td>
+                        <td>{{farm.domicilio}}</td>
+                        <td>{{farm.provincia}}</td>
+                        <td>{{farm.localidad}}</td>
+                        <td>{{farm.telefono}}</td>
+                        <td>{{farm.email}}</td>
+                        <td>{{farm.estado}}</td>
                         <td>
                             <div class="m-2">
-                                <button type="button" class="btn btn-outline-primary btn-sm">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-pencil" viewBox="0 0 16 16">
-                                        <path
-                                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
+                                <button type="button" title="Modificar" class="btn btn-sm">
+                                    <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M16.84,2.73C16.45,2.73 16.07,2.88 15.77,3.17L13.65,5.29L18.95,10.6L21.07,8.5C21.67,7.89 21.67,6.94 21.07,6.36L17.9,3.17C17.6,2.88 17.22,2.73 16.84,2.73M12.94,6L4.84,14.11L7.4,14.39L7.58,16.68L9.86,16.85L10.15,19.41L18.25,11.3M4.25,15.04L2.5,21.73L9.2,19.94L8.96,17.78L6.65,17.61L6.47,15.29" />
                                     </svg>
                                 </button>
-                                <button type="button" class="btn btn-outline-primary btn-sm">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-eraser" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm2.121.707a1 1 0 0 0-1.414 0L4.16 7.547l5.293 5.293 4.633-4.633a1 1 0 0 0 0-1.414l-3.879-3.879zM8.746 13.547 3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z" />
+                                <button type="button" title="Borrar" class="btn  btn-sm">
+                                    <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M16.24,3.56L21.19,8.5C21.97,9.29 21.97,10.55 21.19,11.34L12,20.53C10.44,22.09 7.91,22.09 6.34,20.53L2.81,17C2.03,16.21 2.03,14.95 2.81,14.16L13.41,3.56C14.2,2.78 15.46,2.78 16.24,3.56M4.22,15.58L7.76,19.11C8.54,19.9 9.8,19.9 10.59,19.11L14.12,15.58L9.17,10.63L4.22,15.58Z" />
                                     </svg>
                                 </button>
-                                <!-- <button type="button" class="btn btn-outline-primary btn-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-                                </svg>
-                            </button> -->
+                                <button type="button"  title="Alta" class="btn btn-sm">
+                                    <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M14,20H10V11L6.5,14.5L4.08,12.08L12,4.16L19.92,12.08L17.5,14.5L14,11V20Z" />
+                                    </svg>
+                                </button>
+                                <button type="button"  title="Baja" class="btn btn-sm">
+                                    <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M10,4H14V13L17.5,9.5L19.92,11.92L12,19.84L4.08,11.92L6.5,9.5L10,13V4Z" />
+                                    </svg>
+                                </button>
                             </div>
                         </td>
                     </tr>
