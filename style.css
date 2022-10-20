@@ -9,10 +9,14 @@
     height: auto;
 }
 
-.nav_items{
+.nav-items{
     font-weight: 700;
+    
 }
 
+.nav-items a{
+    font-size: 820px;
+}
 .tabla_farmacia{
     border: 1px solid black;
     text-align: center;
@@ -44,6 +48,12 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.offcanvas-body{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;
+    justify-items: center; */
+}
 .offcanvas-body button{
     background: none;
     border: 0;
@@ -67,4 +77,15 @@
 .div-form-farmacia input{
     height: auto;
     width: 100%;
+}
+
+#carouselExampleDark{
+    width: 100% !important;
+    height: auto;
+    
+}
+
+#carouselExampleDark img{
+    width: 760px;
+    height: 496px ;
 }
