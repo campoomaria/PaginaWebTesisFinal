@@ -13,7 +13,7 @@
     font-weight: 700;
 }
 
-.tabla_farmacia{
+.tabla_farmacia, .tabla_instmed{
     border: 1px solid black;
     text-align: center;
     margin:auto;
@@ -21,7 +21,7 @@
     
 }
 
-.head_table_farmacia{
+.head_table_farmacia, .head_table_instmed{
     background-color: #73c8d3;
     font-weight: 700;    
 }
@@ -56,15 +56,27 @@
     margin: 15px;
     
 }
-.formfarmacianueva{
+.formfarmacianueva, .formproductonuevo{
     margin: 5px;
     
 }
 
-.div-form-farmacia{
+.div-form-farmacia, .div-form-producto, .div-form-instmedica{
     margin-bottom: 10px;
 }
-.div-form-farmacia input{
+.div-form-farmacia input, .div-form-producto input, .div-form-instmedica input{
     height: auto;
     width: 100%;
 }
+
+.div-form-producto textarea{
+    resize: none;
+    height: 80px;
+    width: 100%;
+}
+
+.body_provincia{
+    font-size: large;
+    font-weight: 700;
+}
+

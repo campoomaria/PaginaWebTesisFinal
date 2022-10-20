@@ -2,7 +2,12 @@ createApp({
     data() {
       return {
         iniciosesion: false,
-        Farmacias:[], //supongo que aqui cargaremos lo que viene del back
+        Farmacias:[],
+        Productos:[],
+        Rubros:[],
+        institucionesMedicas:[],
+        
+        //supongo que aqui cargaremos lo que viene del back
       //Aqui van las variables u objetos que necesitemos
       }
     },

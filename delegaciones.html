@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delegaciones</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg text-white  fixed fs-5 fw-bold" style="background-color: #73c8d3;">
@@ -58,60 +61,305 @@
             </div>
         </nav>
     </header>
-    
-    <main>
-        
-        <section class="m-4">
-            <div class="d-flex flex-row justify-content-evenly ">
-        <div class="card" style="width: 20rem;">
-            <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="imagenbsas">
-            <div class="card-body">
-              <h5 class="card-title text-center">Buenos Aires</h5>
-              <p class="card-text">BELGRANO 1090 (Zárate)</p>
-              <p>Cobertura para Bs. As. es 60 Kilometros al rededor de Zárate.</p>
-                <p>Tel.: 03487-437660</p>
-                <p>Código Postal 2800</p>
-                <p>Email: 
-                    <a href="soesgypezarate@hotmail.com">soesgypezarate@hotmail.com</a>  </p>
-                <p>Encargado de Delegación: Copertari Emilio</p>
-            </div>
-          </div>
 
-          <div class="card" style="width: 20rem;">
-            <img src="..." class="card-img-top" alt="imagencatamarca">
-            <div class="card-body">
-              <h5 class="card-title">Catamarca</h5>
-              <p class="card-text">SARMIENTO 1051 (San Fdo.del Valle)</p>
-                <p>Tel.: 03833-455767-15506316</p>
-                <p>Código Postal 4700</p>
-                <p>Email: 
-                    <a href="nico_saad@hotmail.com">nico_saad@hotmail.com</a>  
-                </p>
-                <p>Encargado de Delegación: Saad Nicolás</p>
+    <main>
+
+        <section class="section_delegaciones text-center d-flex flex-column align-content-center  ">
+            <h1>Delegaciones</h1>
+            <div class="table-responsive">
+
+                <table class="table table-bordered  table-striped ">
+
+                    <head class="headertabledelegacion">
+                        <tr>
+                            <th>Direccion</th>
+                            <th>Telefono</th>
+                            <th>Codigo Postal</th>
+                            <th>Email</th>
+                            <th>Encargado Delegación</th>
+                            <th>Ubicación</th>
+                        </tr>
+                    </head>
+                    <tbody>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Buenos Aires</td>
+                        </tr>
+                        <tr>
+                            <td>Belgrano 1090 (Zárate)</td>
+                            <td>03487-437660</td>
+                            <td>2800</td>
+                            <td>soesgypezarate@hotmail.com</td>
+                            <td>Copertari Emilio</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6607.787911565154!2d-59.03125169835203!3d-34.09785696976095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb0b69b5b837b5%3A0x37c8a2c7f9cc0bd3!2sBelgrano%201090%2C%20B2800JBV%20Z%C3%A1rate%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1666290235577!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Catamarca</td>
+                        </tr>
+                        <tr>
+                            <td>Sarmiento 1051(San Fdo. del Valle</td>
+                            <td>03833-455767-15506316</td>
+                            <td>4700</td>
+                            <td>nico_saad@hotmail.com</td>
+                            <td>Saad Nicolás</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.179896743075!2d-65.78194028566429!3d-28.474128466976207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942428c3e25c6513%3A0x2b58ba91649991a7!2sSarmiento%201051%2C%20San%20Fernando%20del%20Valle%20de%20Catamarca%2C%20Catamarca!5e0!3m2!1ses-419!2sar!4v1666290600969!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Chubut</td>
+                        </tr>
+                        <tr>
+                            <td>Mitre 766(Esquel)</td>
+                            <td>02945 452317</td>
+                            <td>9200</td>
+                            <td>ospeschubut@hotmail.com</td>
+                            <td>Viñales Lisandro A.</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5843.97082329521!2d-71.32967083626316!3d-42.91534864929754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961dac30f894ad27%3A0x4465576e94a4691b!2sBartolom%C3%A9%20Mitre%20766%2C%20Esquel%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1666290647951!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Cordoba</td>
+                        </tr>
+                        <tr>
+                            <td>Jujuy 391</td>
+                            <td>0351-4229784</td>
+                            <td>5000</td>
+                            <td>sintesype@hotmail.com</td>
+                            <td>Arevalo Leandro</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.1640365822445!2d-64.19132238556193!3d-31.409606303065406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298793512ebcf%3A0xc5f2784cc2f42b79!2sJujuy%20391%2C%20X5022FMG%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1666290696096!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Corrientes</td>
+                        </tr>
+                        <tr>
+                            <td>Cordoba 593 (Entre Quintana y Mayo)</td>
+                            <td>0379-4461695</td>
+                            <td>3400</td>
+                            <td>ospescorrientes@hotmail.com</td>
+                            <td>Romero Victor</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7080.315251656466!2d-58.837127427041054!3d-27.464351698563327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456ca665a82ecb%3A0x13b683f3e8e14a3e!2sC%C3%B3rdoba%20593%2C%20W3400%20CDE%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1666290762341!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Entre Rios</td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Francisco Soler 1362 (Paraná)</td>
+                            <td>03434248294</td>
+                            <td>3100</td>
+                            <td>ospesentrerios@gigared.com</td>
+                            <td>Biderbos Omar</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6786.494141476318!2d-60.517867968171515!3d-31.736456418980488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44d8b6ab281f9%3A0x9387a78d98f1fbd2!2sFrancisco%20Soler%201352%2C%20Paran%C3%A1%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1666290813163!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Formosa</td>
+                        </tr>
+                        <tr>
+                            <td>Calle Provincia de Territorios Nac.1076 PB</td>
+                            <td>03704-436817</td>
+                            <td>3600</td>
+                            <td>formosaospes@hotmail.com</td>
+                            <td>Ceballos Orlando</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0899507866075!2d-58.191013184809876!3d-26.193752024682826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945ca5ffd6ae1979%3A0xac8d6bd688d15b8b!2sPolicias%20de%20los%20Territorios%20Nacionales%201198-1150%2C%20Formosa!5e0!3m2!1ses-419!2sar!4v1666291963064!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Jujuy</td>
+                        </tr>
+                        <tr>
+                            <td>Belgrano 1476 (San Salvador)</td>
+                            <td>0388-4225444</td>
+                            <td>4600</td>
+                            <td>piazza.claudia@hotmail.com</td>
+                            <td>Santillán Gaspar</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.629318351419!2d-65.31563976860245!3d-24.184729550642913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f3e3ca596f5%3A0x594dfdd0f3ce5647!2sACB%2C%20Gral.%20Belgrano%201476%2C%20Y4600%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1666292013306!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">La Pampa</td>
+                        </tr>
+                        <tr>
+                            <td>1° de Mayo 174 (Santa Rosa)</td>
+                            <td>02954426187</td>
+                            <td>6300</td>
+                            <td>laury979@hotmail.com</td>
+                            <td>Fiorani Juan Pedro</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.460172203101!2d-64.28658542245748!3d-36.61530848798089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c2cda680a435e5%3A0xf10b745cd1d22c3!2s1%20de%20Mayo%20174%2C%20L6302%20Santa%20Rosa%2C%20La%20Pampa!5e0!3m2!1ses-419!2sar!4v1666292046063!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">La Rioja</td>
+                        </tr>
+                        <tr>
+                            <td>Benjamin de la Vega 238 Barrio Centro</td>
+                            <td>0380-4436019</td>
+                            <td>5300</td>
+                            <td>nico_saad@hotmail.com</td>
+                            <td>Saad Francisco</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.4404043042637!2d-66.85389168255615!3d-29.415922099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427da35b389778d%3A0x51a6c13f52d2d366!2sBenjam%C3%ADn%20de%20la%20Vega%20238%2C%20F5300%20La%20Rioja!5e0!3m2!1ses-419!2sar!4v1666292082658!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Mendoza</td>
+                        </tr>
+                        <tr>
+                            <td>Rioja 831</td>
+                            <td>0261-4235326</td>
+                            <td>5500</td>
+                            <td>soesma09@hotmail.com </td>
+                            <td>Orozco Osvaldo</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.1652354672347!2d-68.83803048550706!3d-32.893799276543604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0917cc782477%3A0x72df564c793ca84e!2sRioja%20831%2C%20M5500%20Mendoza!5e0!3m2!1ses-419!2sar!4v1666292116385!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Misiones</td>
+                        </tr>
+                        <tr>
+                            <td>Av.Lavalle 2390 (Posadas)</td>
+                            <td>0376-4438021 / 0376 4429014</td>
+                            <td>3300</td>
+                            <td>gerosan69@gmail.com</td>
+                            <td>Sanabria Geronimo Ramón</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.1563693923154!2d-55.90805558570069!3d-27.370831519056587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be390fec06c7%3A0xdbf018f2fa90b549!2sAv.%20Gral.%20Lavalle%202390%2C%20N3300OOQ%20Posadas%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1666292140538!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Rio Negro</td>
+                        </tr>
+                        <tr>
+                            <td>Otto Goedecke 210 y Mitre</td>
+                            <td>02944-431834 -15297009</td>
+                            <td>8400</td>
+                            <td>ospesrionegro@hotmail.com</td>
+                            <td>Almeida Alberto</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.9855275057485!2d-71.30004967961064!3d-41.13484190013577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b656f538f83%3A0x6a0af8aaf0a39036!2sOtto%20Goedecke%20210%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1666292181888!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Salta</td>
+                        </tr>
+                        <tr>
+                            <td>Cadena de Hessling 212 B°Don Emilio</td>
+                            <td>0387-4232948</td>
+                            <td>4400</td>
+                            <td>soesgype_salta@hotmail.com</td>
+                            <td>Zenteno Francisco</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7242.724650314536!2d-65.43272596574688!3d-24.817279922208662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc2fb5187d7b3%3A0x8df410b844e4b537!2sTeresa%20Cadena%20de%20Hessling%2C%20Salta!5e0!3m2!1ses-419!2sar!4v1666292221938!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">San Juan</td>
+                        </tr>
+                        <tr>
+                            <td>Santiago Paredes 741 Barrio Natania XX (Rivadavia)</td>
+                            <td>0264-156202612</td>
+                            <td>5400</td>
+                            <td>-</td>
+                            <td>Gonzalez Carlos Faustino</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.1368571905914!2d-68.57860418555694!3d-31.54785850977878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968140f753774677%3A0x4ad9121bf3abbd45!2sSantiago%20Paredes%20Oeste%2C%20Rivadavia%2C%20San%20Juan!5e0!3m2!1ses-419!2sar!4v1666292281607!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">San Luis</td>
+                        </tr>
+                        <tr>
+                            <td>Juan W. Gaez 195</td>
+                            <td>02652-444045</td>
+                            <td>5700</td>
+                            <td>soesgypesanluis@hotmail.com</td>
+                            <td>Henry Oscar</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3334.8221094196506!2d-66.3286869854919!3d-33.29731659705397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d43eac1f4b185f%3A0x7e5a8cfba589db9c!2sPje%20J.%20W.%20Gez%20195%2C%20D5702FJT%20San%20Luis!5e0!3m2!1ses-419!2sar!4v1666292314959!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Santiago del Estero</td>
+                        </tr>
+                        <tr>
+                            <td>Av. Moreno Sur 585</td>
+                            <td>0385-4220226</td>
+                            <td>4200</td>
+                            <td>soesgyesgoestero@hotmail.com</td>
+                            <td>Juarez Ricardo Ernesto</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.5804780921962!2d-64.26754868446707!3d-27.791897890037735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b52128025d999%3A0xb861f9862fcde03b!2sAv.%20Moreno%20Sur%20585%2C%20G4200%20LNU%2C%20Santiago%20del%20Estero!5e0!3m2!1ses-419!2sar!4v1666292336031!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Tierra del Fuego</td>
+                        </tr>
+                        <tr>
+                            <td>Laserre 878</td>
+                            <td>0294-154297009</td>
+                            <td>9420</td>
+                            <td>-</td>
+                            <td>Almeida Alberto</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.419016659407!2d-67.70740007660847!3d-53.78202945604192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4b16437229b61f%3A0x33de949e39036dd0!2sC.%20Augusto%20Lasserre%20878%2C%20R%C3%ADo%20Grande%2C%20Tierra%20del%20Fuego!5e0!3m2!1ses-419!2sar!4v1666292372468!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr class="text-center body_provincia">
+                            <td colspan="6">Tucumán</td>
+                        </tr>
+                        <tr>
+                            <td>Crisostomo Alvarez 1278</td>
+                            <td>0381-4245175</td>
+                            <td>4000</td>
+                            <td>adrianaospes@hotmail.com</td>
+                            <td>Sanchez Francisco</td>
+                            <td><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.3153589778535!2d-65.21914248571811!3d-26.829920196216616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c6c85b516c5%3A0x81657de30f21d4de!2sJuan%20Cris%C3%B3stomo%20%C3%81lvarez%201278%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1666292398821!5m2!1ses-419!2sar"
+                                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-          </div>
-          <div class="card" style="width: 20rem;">
-            <img src="..." class="card-img-top" alt="imagenchubut">
-            <div class="card-body">
-              <h5 class="card-title">Chubut</h5>
-              <p class="card-text">MITRE 766 (Esquel)</p>
-                <p>Tel.Fax:02945 452317 </p>
-                <p>Código Postal 9200</p>
-                <p>Email: 
-                    <a href="ospeschubut@hotmail.com">ospeschubut@hotmail.com</a> 
-                </p>
-                <p>Encargado de Delegación: Lisandro A. Viñales</p>
-            </div>
-          </div>
-        </div>  
-        </section>    
+        </section>
     </main>
-    
     <footer>
 
     </footer>
     <script src="https://unpkg.com/vue@3"></script>
     <script src="./main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
