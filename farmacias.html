@@ -102,20 +102,20 @@
                                 <input type="text" v-model="domiciliofarmacia" class="form-control" required minlength="4" maxlength="260">                                
                             </div>
                             <div class="div-form-farmacia">
-                                <label for="provinciafarmacia">Provincia:</label>
-                                <input type="text" v-model="provinciafarmacia"  class="form-control" required minlength="4" maxlength="20">                                
+                                <label for="Provinciafarmacia">"Provincia":</label>
+                                <input type="text" v-model="Provinciafarmacia"  class="form-control" required minlength="4" maxlength="20">                                
                             </div>
                             <div class="div-form-farmacia">
                                 <label for="localidadfarmacia">Localidad:</label>
                                 <input type="text" v-model="localidadfarmacia" class="form-control" required minlength="4" maxlength="30">                                
                             </div>
                             <div class="div-form-farmacia">
-                                <label for="telefonofarmacia">Telefono:</label>
-                                <input type="number" v-model="telefonofarmacia"  class="form-control" required maxlength="11">                                
+                                <label for="Telefonofarmacia">"Telefono":</label>
+                                <input type="number" v-model="Telefonofarmacia"  class="form-control" required maxlength="11">                                
                             </div>
                             <div class="div-form-farmacia">
-                                <label for="emailfarmacia">Email:</label>
-                                <input type="email" v-model="emailfarmacia"  class="form-control" required placeholder="nombre@ejemplo.com">                                
+                                <label for="Emailfarmacia">"Email":</label>
+                                <input type="Email" v-model="Emailfarmacia"  class="form-control" required placeholder="nombre@ejemplo.com">                                
                             </div>
                         </form>
                     </div>
@@ -135,9 +135,9 @@
                         <td>Nombre</td>
                         <td>Cuil</td>
                         <td>Domicilio</td>
-                        <td>Provincia</td>
+                        <td>"Provincia"</td>
                         <td>Localidad</td>
-                        <td>Telefono</td>
+                        <td>"Telefono"</td>
                         <td>Correo Electronico</td>
                         <td>Estado</td>
                         <td>Acciones</td>
@@ -149,10 +149,10 @@
                         <td>{{farm.farmacia}}</td>
                         <td>{{farm.cuil}}</td>
                         <td>{{farm.domicilio}}</td>
-                        <td>{{farm.provincia}}</td>
+                        <td>{{farm."Provincia"}}</td>
                         <td>{{farm.localidad}}</td>
-                        <td>{{farm.telefono}}</td>
-                        <td>{{farm.email}}</td>
+                        <td>{{farm."Telefono"}}</td>
+                        <td>{{farm."Email"}}</td>
                         <td>{{farm.estado}}</td>
                         <td>
                             <div class="m-2">

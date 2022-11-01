@@ -1,16 +1,18 @@
 createApp({
-    data() {
-      return {
-        iniciosesion: false,
-        Farmacias:[],
-        Productos:[],
-        Rubros:[],
-        institucionesMedicas:[],
-        
-        //supongo que aqui cargaremos lo que viene del back
-      //Aqui van las variables u objetos que necesitemos
-      }
-    },
+  components: {
+    template: "#modal-template",
+  },
+  data() {
+    return {
+      iniciosesion: false,
+      Farmacias: [],
+      Productos: [],
+      Rubros: [],
+      institucionesMedicas: [],
+      page: `index`,
+
+    };
+  },
     methods:{
       //Aqui van los metodos que necesitemos utilizar
       alerta: function () {
@@ -24,9 +26,7 @@ createApp({
             this.nombrecontact = ''
             this.tel = ''
         }
+      }
     },
-    }
-  }).mount('#app')
+}).mount("#app");
 
-
-  datosfarmacia:{}

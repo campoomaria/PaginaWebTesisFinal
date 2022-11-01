@@ -13,90 +13,43 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg text-white  fixed fs-5 fw-bold" style="background-color: #73c8d3;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">OSPES</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-
-                    <div class="offcanvas-body align-items-center">
-                        <h1>
-                            <img src="./asserts/img/logo1.4.png" alt="" style="width: 100px;">
-                            Ospes
-                        </h1>
-                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 ">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="./delegaciones.html">Delegaciones</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Plan Medico Asistencial</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Sitios de interes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-                            </li>
-                        </ul>
-                        <button type="button">
-                            <svg style="width:36px;height:36px" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </nav>
     </header>
-
     <main>
-
-        <section class="section_delegaciones text-center d-flex flex-column align-content-center  ">
-            <h1>Plan Médico Asistencial</h1>
-            <div>
+        <section class="section_planmedico  d-flex flex-column   ">
+            <h1 class="text-center">Plan Médico Asistencial</h1>
+            <div class="">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 ¿Quienes son los Beneficiarios?
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Son los beneficiarios de nuestra Obra Social según la Ley 23.660 —Art. 9, eltitular
-                                afiliado y su grupo familiar primario,
-                                Entendiéndose por ello a:
+                            <div class="accordion-body text-align-start">
+                                <p>
+                                    Son los beneficiarios de nuestra Obra Social según la Ley 23.660 —Art. 9, eltitular
+                                    afiliado y su grupo familiar primario,
+                                    Entendiéndose por ello a:
+                                </p>
                                 <li>El cónyuge del afiliado/a titular</li>
-                                <li> Los hijos hasta los veintiún (21) años, no emancipados por habilitación
+                                <li>Los hijos hasta los veintiún (21) años, no emancipados por habilitación
                                     de edad o ejercicio de actividad profesional, comercial o laboral
                                 </li>
                                 <li>Los hijos solteros mayores de veintiún (21) años y hasta los veinticinco
                                     (25) años inclusive, que estén a exclusivo cargo del afiliado titular y que
                                     cursen estudios regulares oficialmente reconocidos por la autoridad
                                     pertinente.</li>
-                                <li> Los hijos incapacitados y a cargo del titular, cualquiera sea su edad y
+                                <li>Los hijos incapacitados y a cargo del titular, cualquiera sea su edad y
                                     siempre que acrediten la discapacidad mediante la certificación.
                                 </li>
-                                <li> Los hijos del cónyuge
+                                <li>Los hijos del cónyuge.
                                 </li>
-                                <li> Los menores cuya guarda y tutela haya sido acordada por autoridad judicial, que
+                                <li>Los menores cuya guarda y tutela haya sido acordada por autoridad judicial, que
                                     reúnan
-                                    los requisitos establecidos por la ley
+                                    los requisitos establecidos por la ley.
                                 </li>
                             </div>
                         </div>
@@ -111,29 +64,50 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Concurriendo a la Delegación mas próxima a su domicilio allí
-                                Presentara la siguiente documentación:
-
-                                Titular:
-                                DNI (Documento Nacional de Identidad)
-                                Cónyuge:
-                                DNI de ambos + certificado o libreta de matrimonio
-                                Hijo menor de 21 años:
-                                DNI de ambos + partida de nacimiento
-                                Hijo mayor de 21 años y hasta 25 años estudiante:
-                                DNI de ambos + partida de nacimiento + certificado de estudios
-                                Hijo incapacitado, a cargo del titular:
-                                DNI de ambos + partida de nacimiento + certificado médico de Ministerio de
-                                Salud que certifique enfermedad y grado de incapacidad.
-                                Menor a Cargo:
-                                DNI de ambos + constancias de guarda Tutela Judicial
-
-                                Seguidamente se le entregara el carnet de Obra Social – Para presentar en toda ocasión
-                                que requiera servicios.
-
-                                ANTE CUALQUIER DUDA CONSULTE A SEDE CENTRAL
-                                DE LUNES A VIERNES DE 9:00 a 17:00 horas
-                                TELEFONO: (011)4956-0954/FAX (011)4956-0321
+                                <p>
+                                    Concurriendo a la Delegación mas próxima a su domicilio allí
+                                    Presentara la siguiente documentación:
+                                </p>
+                                <p>
+                                    <strong> Titular:</strong>
+                                    DNI (Documento Nacional de Identidad)
+                                </p>
+                                <p>
+                                    <strong>
+                                        Cónyuge:</strong>
+                                    DNI de ambos + certificado o libreta de matrimonio
+                                </p>
+                                <p><strong>
+                                        Hijo menor de 21 años:
+                                    </strong>
+                                    DNI de ambos + partida de nacimiento
+                                </p>
+                                <p><strong>
+                                        Hijo mayor de 21 años y hasta 25 años estudiante:
+                                    </strong>
+                                    DNI de ambos + partida de nacimiento + certificado de estudios
+                                </p>
+                                <p>
+                                    <strong>
+                                        Hijo incapacitado, a cargo del titular:
+                                    </strong>
+                                    DNI de ambos + partida de nacimiento + certificado médico de Ministerio de
+                                    Salud que certifique enfermedad y grado de incapacidad.
+                                </p>
+                                <p><strong>
+                                        Menor a Cargo:
+                                    </strong>
+                                    DNI de ambos + constancias de guarda Tutela Judicial
+                                </p>
+                                <p>
+                                    Seguidamente se le entregara el carnet de Obra Social – Para presentar en toda
+                                    ocasión que requiera servicios.
+                                </p>
+                                <p>
+                                    ANTE CUALQUIER DUDA CONSULTE A SEDE CENTRAL
+                                    DE LUNES A VIERNES DE 9:00 a 17:00 horas
+                                    "Telefono": (011)4956-0954/FAX (011)4956-0321
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -147,546 +121,813 @@
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Cuando por primera vez necesite los Servicios Médicos de su Obra Social, podrá solicitar
-                                información telefónica o concurrir a la Delegación que corresponda a su domicilio en el
-                                horario de atención (Capital Federal . de 9 a 17:00 horas, Teléfonos (011-4954-0956 ó
-                                FAX 011-4956-0321) - Interior del País horario de 8 A 12 Hrs. de 17 a 20 horas, los
-                                teléfonos figuran en la Planilla “Delegaciones del Interior del País”, allí recibirá
-                                orientación referida a los Servicios que requiere y se le proveerá de una Cartilla
-                                Médica.
+                                <p>
+                                    Cuando por primera vez necesite los Servicios Médicos de su Obra Social, podrá
+                                    solicitar
+                                    información telefónica o concurrir a la Delegación que corresponda a su domicilio en
+                                    el
+                                    horario de atención (Capital Federal . de 9 a 17:00 horas, Teléfonos (011-4954-0956
+                                    ó
+                                    FAX 011-4956-0321) - Interior del País horario de 8 A 12 Hrs. de 17 a 20 horas, los
+                                    teléfonos figuran en la Planilla “Delegaciones del Interior del País”, allí recibirá
+                                    orientación referida a los Servicios que requiere y se le proveerá de una Cartilla
+                                    Médica.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
+                        <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Telefono para solicitar servicios médicos </button>
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                "Telefono" para solicitar servicios médicos </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Los encontrará en esta cartilla, debiéndolos seleccionar, de acuerdo a la especialidad
-                                que requiera.
-                                Ante la duda llame a la Delegación que corresponda, a su domicilio.
+                                <p>
+                                    Los encontrará en esta cartilla, debiéndolos seleccionar, de acuerdo a la
+                                    especialidad
+                                    que requiera.
+                                </p>
+                                <p>
+                                    Ante la duda llame a la Delegación que corresponda, a su domicilio.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
+                        <h2 class="accordion-header" id="headingFive">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                ¿QUÉ HACER ANTE LA NECESIDAD DE UNA CONSULTA MÉDICA?
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                ¿Qué hacer ante la necesidad de una consulta médica?
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                1) Deberá solicitar turno al Médico que prefiera, y que podrá seleccionar, del listado
-                                que figura en Cartilla.
-
-                                Turnos:
-                                Los turnos para profesionales y establecimientos tendrán una respuesta acorde con la
-                                urgencia, no siendo mayor de 48 horas su otorgamiento.
-                                Deberá solicitarlos con el Profesional que UD. elija en la Cartilla
+                                <p>
+                                    Primero deberá solicitar turno al Médico que prefiera, y que podrá seleccionar, del
+                                    listado
+                                    que figura en Cartilla.
+                                </p>
+                                <p>
+                                    Turnos:
+                                    Los turnos para profesionales y establecimientos tendrán una respuesta acorde con la
+                                    urgencia, no siendo mayor de 48 horas su otorgamiento.
+                                </p>
+                                <p>
+                                    Deberá solicitarlos con el Profesional que UD. elija en la Cartilla
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
+                        <h2 class="accordion-header" id="headingSix">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                ¿QUÉ DEBE PRESENTAR PARA ACCEDER A LOS SERVICIOS Y PRESTACIONES DE LA OBRA SOCIAL?
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                ¿Qué debe presentar para acceder a los servicios y prestaciones de la obra social?
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <li>La presentación de la credencial de la Obra Social de Estaciones de Servicios,
-                                    Garajes, Playa de Estacionamiento, Lavaderos Automáticos y Gomerías del Republica
-                                    Argentina.
-                                </li>
-                                <li>El D.N.I</li>
-                                <li>El último recibo de sueldo del titular</li>
+                                <ul>
+                                    <li>La presentación de la credencial de la Obra Social de Estaciones de Servicios,
+                                        Garajes, Playa de Estacionamiento, Lavaderos Automáticos y Gomerías del
+                                        Republica
+                                        Argentina.
+                                    </li>
+                                    <li>El D.N.I</li>
+                                    <li>El último recibo de sueldo del titular</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
+                        <h2 class="accordion-header" id="headingSeven">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                                 Solicitud de Práctica Baja y Alta Complejidad:
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Toda práctica de Baja Complejidad solicitada por el Médico Tratante con sello de
-                                Autorizado de la Delegación, se puede realizar directamente en el Establecimiento que
-                                UD. seleccione en Cartilla. Si fuera de Alta Complejidad deberá contar con la
-                                autorización de Auditoria Medica de Sede Central.
-                                El trámite lo efectuará la Delegación — Vía Fax
+                                <p>
+                                    Toda práctica de Baja Complejidad solicitada por el Médico Tratante con sello de
+                                    Autorizado de la Delegación, se puede realizar directamente en el Establecimiento
+                                    que
+                                    UD. seleccione en Cartilla. Si fuera de Alta Complejidad deberá contar con la
+                                    autorización de Auditoria Medica de Sede Central.
+                                </p>
+                                <p>
+                                    El trámite lo efectuará la Delegación — Vía Fax
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
+                        <h2 class="accordion-header" id="headingeigth">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                PROCEDIMIENTO PARA SU ATENCIÓN MÉDICA:
+                                data-bs-target="#collapseeigth" aria-expanded="false" aria-controls="collapseeigth">
+                                Procedimiento para su atención médica:
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        <div id="collapseeigth" class="accordion-collapse collapse" aria-labelledby="headingeigth"
                             data-bs-parent="#accordionExample">
-                            <div class="accordion-body">El acceso a Centros y Sanatorios indicados en la Cartilla está
-                                previsto por guardia, con el Bono de Consulta. (Previo Pago de Co- seguro de $4 en la
-                                Delegación).
-                                Si en la Visita a Domicilio la conducta es internación, NO ABONA COSEGURO.
+                            <div class="accordion-body">
+                                <p>
+                                    El acceso a Centros y Sanatorios indicados en la Cartilla está
+                                    previsto por guardia, con el Bono de Consulta. (Previo Pago de Co- seguro de $4 en
+                                    la
+                                    Delegación).
+                                </p>
+                                <p>
+                                    Si en la Visita a Domicilio la conducta es internación, NO ABONA COSEGURO.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
+                        <h2 class="accordion-header" id="headingnine">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                ATENCIÓN DOMICILIARIA:
+                                data-bs-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
+                                Atención Domiciliaria:
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        <div id="collapsenine" class="accordion-collapse collapse" aria-labelledby="headingnine"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Si su médico tratante considera que su atención no requiereinternación, podrá, en los
-                                post-operatorios, en otros, indicarle atencióndomiciliaria ella se realizara través de
-                                enfermeras y profesionales médicos. Que concurrirá a su domicilio
-                                Se gestionara en la Delegación.
+                                <p>
+                                    Si su médico tratante considera que su atención no requiereinternación, podrá, en
+                                    los
+                                    post-operatorios, en otros, indicarle atencióndomiciliaria ella se realizara través
+                                    de
+                                    enfermeras y profesionales médicos. Que concurrirá a su domicilio
+                                </p>
+                                <p>
+                                    Se gestionara en la Delegación.
+                                </p>
                             </div>
                         </div>
                     </div>
-
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                SERVICIO MEDICO A DOMICILIO:
+                        <h2 class="accordion-header" id="headingeleven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseeleven" aria-expanded="false" aria-controls="collapseeleven">
+                                Servicio médico a domicilio:
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapseeleven" class="accordion-collapse collapse"
+                            aria-labelledby="headingeleven" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Lo realizarán los profesionales de la misma Clínica tratante previa autorización de la
-                                Delegación. La Orden Médica que lo indique deberá contener la periodicidad y el tiempo
-                                estimado de atención. Lo autorizará Auditoria de Sede Central por medio de FAX que envía
-                                a la Delegación.
-                                Un médico concurrirá a su domicilio en el término máximo de dos (2) horas, llamando a:
+                                <p>
+                                    Lo realizarán los profesionales de la misma Clínica tratante previa autorización de
+                                    la
+                                    Delegación. La Orden Médica que lo indique deberá contener la periodicidad y el
+                                    tiempo
+                                    estimado de atención. Lo autorizará Auditoria de Sede Central por medio de FAX que
+                                    envía
+                                    a la Delegación.
+                                </p>
+                                <p>
+                                    Un médico concurrirá a su domicilio en el término máximo de dos (2) horas, llamando
+                                    al número correspondiente.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
+                        <h2 class="accordion-header" id="headingten">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                SERVICIO DE EMERGENCIAS </button>
+                                data-bs-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
+                                Servicio de emergencias </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        <div id="collapseten" class="accordion-collapse collapse" aria-labelledby="headingten"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Si su vida se ve comprometida, su familia podrá requerir médico y/o ambulancia para su
-                                traslado, llamando a los teléfonos que cada Provincia indique en esta cartilla.
+                                <p>
+                                    Si su vida se ve comprometida, su familia podrá requerir médico y/o ambulancia para
+                                    su
+                                    traslado, llamando a los teléfonos que cada "Provincia" indique en esta cartilla.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
+                        <h2 class="accordion-header" id="headingtwelve">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                SERVICIO DE AMBULANCIAS: </button>
+                                data-bs-target="#collapsetwelve" aria-expanded="false" aria-controls="collapsetwelve">
+                                Servicios de ambulancias: </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapsetwelve" class="accordion-collapse collapse"
+                            aria-labelledby="headingtwelve" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Destinado a pacientes que no puedan movilizarse por sus propios medios desde, hasta o
-                                entre Establecimientos y que requieran de este servicio para el diagnóstico o
-                                tratamiento de su patología llamando a su Delegación, programarán su atención.
-
-                                PARA TRASLADOS PROGRAMADOS, LO MISMO QUE PARA CASOS DE URGENCIA O EMERGENCIA, LLAMAR AL
-                                TELÉFONO DE SU DELEGACIÓN O CLINICA MAS CERCANA A SU DOMICILIO.
+                                <p>
+                                    Destinado a pacientes que no puedan movilizarse por sus propios medios desde, hasta
+                                    o
+                                    entre Establecimientos y que requieran de este servicio para el diagnóstico o
+                                    tratamiento de su patología llamando a su Delegación, programarán su atención.
+                                </p>
+                                <p>
+                                    PARA TRASLADOS PROGRAMADOS, LO MISMO QUE PARA CASOS DE URGENCIA O EMERGENCIA, LLAMAR
+                                    AL
+                                    TELÉFONO DE SU DELEGACIÓN O CLINICA MAS CERCANA A SU DOMICILIO.
+                                </p>
                             </div>
                         </div>
                     </div>
-
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
+                        <h2 class="accordion-header" id="headingthirteen">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                CENTROS ODONTOLÓGICOS DE URGENCIAS: </button>
+                                data-bs-target="#collapsethirteen" aria-expanded="false"
+                                aria-controls="collapsethirteen">
+                                Centros odontologicos de emergencia: </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapsethirteen" class="accordion-collapse collapse "
+                            aria-labelledby="headingthirteen" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Dirigirse directamente a los Centros de Atención Odontológicos detallados en cada zona.
-                                Consultar la presente Cartilla.
-                                Además puede dirigirse para todo tipo de información de la especialidad, telefónicamente
-                                a su Delegación.
+                                <p>
+                                    Dirigirse directamente a los Centros de Atención Odontológicos detallados en cada
+                                    zona.
+                                </p>
+                                <p>
+                                    Consultar la presente Cartilla.
+                                </p>
+                                <p>
+                                    Además puede dirigirse para todo tipo de información de la especialidad,
+                                    telefónicamente
+                                    a su Delegación.
+                                </p>
                             </div>
                         </div>
                     </div>
-
-
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
+                        <h2 class="accordion-header" id="headingFourteen">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                CONSULTAS VIA INTERNET:
+                                data-bs-target="#collapseFourteen" aria-expanded="false"
+                                aria-controls="collapseFourteen">
+                                Atención ambulatoria: </button>
+                        </h2>
+                        <div id="collapseFourteen" class="accordion-collapse collapse"
+                            aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Reserve su turno llamando directamente al Profesional Medico que elija en Cartilla.
+                                    Sr.
+                                </p>
+                                <p>
+                                    Afiliado: Usted cuenta con libre elección de sus médicos.
+                                </p>
+                                <p>
+                                    Para su atención deberá presentar el bono de consulta (que deberá adquirirlo en la
+                                    Delegación, por un valor de $4). Única exigencia de la Obra Social.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingfifteen">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsefifteen" aria-expanded="false" aria-controls="collapsefifteen">
+                                Internaciones:
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapsefifteen" class="accordion-collapse collapse "
+                            aria-labelledby="headingfifteen" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                La Cartilla Médica, y sus prestaciones, podrá consultarse a través de nuestros Correos
-                                Electrónicos:
-                                central@ospes.com.ar
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                ATENCIÓN AMBULATORIA: </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Reserve su turno llamando directamente al Profesional Medico que elija en Cartilla. Sr.
-                                Afiliado: Usted cuenta con libre elección de sus médicos.
-                                Para su atención deberá presentar el bono de consulta (que deberá adquirirlo en la
-                                Delegación, por un valor de $4). Única exigencia de la Obra Social.
+                                <p>
+                                    En caso de una internación programada (NO DE URGENCIA) la orden de internación debe
+                                    ser
+                                    tramitada ante la Delegación de su zona. Ver teléfono, Fax y domicilio en la
+                                    presente
+                                    Cartilla o Personalmente en las Sedes de las Delegaciones
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
+                        <h2 class="accordion-header" id="headingsixteen">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                INTERNACIONES:
+                                data-bs-target="#collapsesixteen" aria-expanded="false" aria-controls="collapsesixteen">
+                                Urgencias Psiquiátricas:
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapsesixteen" class="accordion-collapse collapse"
+                            aria-labelledby="headingsixteen" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                En caso de una internación programada (NO DE URGENCIA) la orden de internación debe ser
-                                tramitada ante la Delegación de su zona. Ver teléfono, Fax y domicilio en la presente
-                                Cartilla o Personalmente en las Sedes de las Delegaciones
+                                <p>
+                                    Atención en los establecimientos que indiquen las Federaciones Médicas de cada
+                                    "Provincia". Existen contratos en la totalidad.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
+                        <h2 class="accordion-header" id="headingSeventeen">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                URGENCIAS PSIQUIÁTRICAS:
+                                data-bs-target="#collapseSeventeen" aria-expanded="false"
+                                aria-controls="collapseSeventeen">
+                                Tratamientos:
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapseSeventeen" class="accordion-collapse collapse "
+                            aria-labelledby="headingSeventeen" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Atención en los establecimientos que indiquen las Federaciones Médicas de cada
-                                Provincia. Existen contratos en la totalidad.
+                                <p>
+                                    Se brinda atención en Consultorios Externos, Hospital de Día e Internaciones
+                                    Psiquiátricas y además de Programas de Tratamientos por Drogodependencia,
+                                    Alcoholismo y
+                                    trastornos alimentarios (anorexia-bulimia). Para ello, debe comunicarse a la Sede de
+                                    su
+                                    Delegación a los Teléfonos que figuren en cartilla. Por consulta a Sede Central al
+                                    teléfono:
+                                    (011) 4956-0954
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
+                        <h2 class="accordion-header" id="headingeigthteen">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                TRATAMIENTOS:
-                            </button>
+                                data-bs-target="#collapseeigthteen" aria-expanded="false"
+                                aria-controls="collapseeigthteen">
+                                Metodologia: </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapseeigthteen" class="accordion-collapse collapse"
+                            aria-labelledby="headingeigthteen" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Se brinda atención en Consultorios Externos, Hospital de Día e Internaciones
-                                Psiquiátricas y además de Programas de Tratamientos por Drogodependencia, Alcoholismo y
-                                trastornos alimentarios (anorexia-bulimia). Para ello, debe comunicarse a la Sede de su
-                                Delegación a los Teléfonos que figuren en cartilla. Por consulta a Sede Central al
-                                teléfono:
-                                (011) 4956-0954
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                METODOLOGIA: </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Se concerta en forma telefónica una entrevista de admisión
-                                Se evalúa la modalidad terapéutica a implementar y luego el paciente es derivado al
-                                profesional correspondiente.
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                ACTUALIZACIÓN DE LA CARTILLA MÉDICA:
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Semestralmente será actualizada la presente Cartilla con todas las modificaciones que
-                                pudieran operarse en domicilios, teléfonos, prestadores y/o modalidades operativas.
+                                <p>
+                                    Se concerta en forma telefónica una entrevista de admisión.
+                                </p>
+                                <p>
+                                    Se evalúa la modalidad terapéutica a implementar y luego el paciente es derivado al
+                                    profesional correspondiente.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
+                        <h2 class="accordion-header" id="headingnineteen">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                SEÑOR AFILIADO
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Los ejemplares de la Cartilla estarán a su disposición en Sede Central y en todas las
-                                Delegaciones.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                data-bs-target="#collapsenineteen" aria-expanded="false"
+                                aria-controls="collapsenineteen">
                                 COBERTURA P.M.O.
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapsenineteen" class="accordion-collapse collapse "
+                            aria-labelledby="headingnineteen" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
+                                <h4>
+                                    1-ATENCIÓN PRIMARIA Y SECUNDARIA:
+                                    Programas de Prevención Primaria y Secundaria
+                                </h4>
+                                <h4>
+                                    COBERTURA AL 100%
+                                </h4>
+                                <p><strong>
+                                        Programa Materno Infantil:
+                                    </strong>
+                                </p>
+                                <p>
+                                    Con una cobertura al 100 % de la maternidad, del parto y del recién nacido
+                                    se trata de ampliar el Programa Materno Infantil, a través de las practicas
+                                    que se detallan:
+                                </p>
+                                <p><strong>
+                                        Control del Embarazo:
+                                    </strong>
+                                    se proporcionara gratuitamente a la beneficiaria:
+                                </p>
+                                <p>
+                                    a)-Examen Ginecológico, Papanicolaou y Colposcopia
+                                </p>
+                                <p>
+                                    b)-Examen de laboratorio de rutina con serología para la detección de
+                                    Sífilis y Chagas.
+                                </p>
+                                <p>
+                                    c)-Grupo Sanguíneo y Factor RH.
+                                </p>
+                                <p>
+                                    d)-Análisis de orina completo.
+                                </p>
+                                <p>
+                                    e)-Vacunación: Tétanos y Sabin.
+                                </p>
+                                <p>
+                                    f)- Dos ecografías obstétricas
+                                </p>
+                                <p>
+                                    <strong>
+                                        Para el control del Recien Nacido :
+                                    </strong>
+                                    Estudios de detección de previstos por la ley nº 26.279
+                                </p>
+                                <p>
+                                <ul>
+                                    <li>
+                                        Fenilcetonuria
+                                    </li>
+                                    <li>
+                                        Hipotiroidismo congénito
+                                    </li>
+                                    <li>
+                                        Enfermedad Fibroquistica
+                                    </li>
+                                    <li>
+                                        Vacunación de BCG y Hepatitis B
+                                    </li>
+                                    <li>
+                                        Galactocemia
+                                    </li>
+                                    <li>
+                                        Hiperplasia suprarrenal congénita
+                                    </li>
+                                    <li>
+                                        Deficiencia de Biotimidasa
+                                    </li>
+                                    <li>
+                                        Retimografia del prematuro
+                                    </li>
+                                    <li>
+                                        Chagas
+                                    </li>
+                                    <li>
+                                        Sífilis del recién nacido
+                                    </li>
+                                </ul>
+                                </p>
+                                <p><strong>
+                                        Programa de Prevención
+                                    </strong>
+                                </p>
+                                <p><strong>
+                                        Sr. Afiliado:
+                                    </strong>
+                                    Se ha previsto desarrollar en el presente periodo los programas de
+                                    prevención que se detallan y de los cuales ha comenzado una campaña de
+                                    difusión referida a la gratuidad de la atención, a los alcances de los
+                                    mismos, sus contenidos, periodos de desarrollo y centro de atención a su
+                                    servicio.
+                                </p>
+                                <p>
+                                    La información esta contenida en afiches colocado en la delegación, folletos
+                                    de distribución generalizada y toda inquietud que desee expresar el afiliado
+                                    o que necesite escuchar para ampliar su información presentarse
+                                    personalmente en su respectiva delegación o llamar telefónicamente.
+                                </p>
+                                <p>
+                                    Usted puede adherirse a los programas, con solo llamar y expresar su deseo
+                                    de pertenencia
+                                </p>
+                                <p>
+                                    Deseamos contar con su presencia.
+                                    Es necesario prevenir, evitando la Enfermedad
+                                </p>
+                                <p>
+                                    <li>
+                                        Programa de Prevención del cáncer Femenino.
+                                    </li>
+                                    <li>
+                                        Cobertura de medicación que figure en el programa Nacional de Garantía de
+                                        Calidad de la Atención Médica
+                                    </li>
+                                    <li>
+                                        *Se Excluyen de la cobertura todo tipo de tratamiento y/o protocolos de
+                                        carácter experimental o en fase de prueba
+                                        1-Programa de prevención de Cáncer de Mama
+                                        2-Prevención de Cáncer de Cuello Uterino
+                                    </li>
+                                    <li>
+                                        *Programa Materno Infantil
+                                    </li>
+                                    <li>
+                                        *Programa de Prevención Odontológica
+                                    </li>
+                                    <li>
+                                        *Programa de Salud Sexual, Procreación Responsable (Ley 25673) y sida
+                                    </li>
+                                    <li>
+                                        Programa de Detección precoz de Diabetes Mellitus (Pronadia)
+                                        . 100% Insulina
+                                        . 70% Hipoglucemiantes orales
+                                        . Tirillas Reactivas para determinar :
+                                        . Glucosa en orina 70%
+                                        . Acetona en Orina 70%
+                                        . Glucosa y Acetona en orina 70%
+                                    </li>
+                                    <li>
+                                        *Programa de prevención de enfermedades cardiovasculares
+                                    </li>
+                                </p>
+                                <p><strong>
+                                        Programa de discapacitados:
+                                    </strong>
+                                </p>
+                                <li>
+                                    Cobertura médica total y gratuita (ambulatorio e internación)
+                                </li>
+                                <li>
+                                    Cobertura del tratamiento de rehabilitación
+                                </li>
+                                <li>
+                                    Cobertura de muletas y silla de ruedas
+                                </li>
+                                <li>
+                                    Cobertura de escolaridad, transporte y toda otra necesidad
+                                </li>
+                                <p><strong>
+                                        Programa de Salud Sexual y Procreación Responsable
+                                    </strong>
+                                </p>
+                                <p>
+                                    Entrega gratuita de anticonceptivos y profilácticos a grupos bajo programa
+                                </p>
+                                <p>
+                                    Intervención de contracepción Quirúrgica Ley Nº 26130
+                                </p>
+                                <p>
+                                    En cumplimiento de la citada norma, la Obra Social efectúa sin cargo, a
+                                    través de los Prestadores de Cartilla, la cobertura de practicas denominadas
+                                    Ligadura de Trompas de Falopio y ligadura de conductos deferentes o
+                                    vasectomía, a toda persona capaz, mayor de edad que lo requiera formalmente;
+                                    siendo el requisito previo, que otorgue su consentimiento informado.
+                                </p>
+                                <h4>
+                                    2-Atención Secundaria:
+                                </h4>
+                                <p>
+                                    <li>
+                                        Asistencia ambulatoria.
+                                    </li>
+                                    <li>
+                                        Consultas médicas en consultorio, domicilio e internación.
+                                    </li>
+                                    <li>
+                                        Prácticas y estudios complementarios ambulatorios -diagnósticos y
+                                        terapéuticos.
+                                    </li>
+                                    <li>
+                                        Internación 100% en institucional hospital día o domiciliaria.
+                                    </li>
+                                </p>
+                                <p><strong>
+                                        Salud Mental:
+                                    </strong>
+                                </p>
+                                <p>
+                                    <li>
+                                        Prevención en salud mental.
+                                    </li>
+                                    <li>
+                                        Prestaciones cubiertas.
+                                    </li>
+                                    <li>
+                                        Atención ambulatoria, hasta 30 sesiones cada 12 meses (4
+                                        consultas/mensuales)
+                                    </li>
+                                    <li>
+                                        Consulta Psiquiátrica-Psicológica.
+                                    </li>
+                                    <li>
+                                        Psicoterapia de familia y de pareja.
+                                    </li>
+                                    <li>
+                                        Entrevista y tratamiento psicopedagógico.
+                                    </li>
+                                    <li>
+                                        Psicodiagnóstico.
+                                    </li>
+                                    <li>
+                                        Internación Agudos: hasta 30 días cada 12 meses.
+                                    </li>
+                                    <li>
+                                        Hospital de día: hasta 30 días cada 12 meses.
+                                    </li>
+                                </p>
+                                <p><strong>
+                                        Otros
+                                    </strong>
+                                </p>
+                                <p>
+                                    <li>
+                                        Estimulación temprana de acuerdo al P.M.O.
+                                    </li>
+                                    <li>
+                                        Traumatología: hasta 30 días y posterior evaluación.
+                                    </li>
+                                    <li>
+                                        Grandes accidentados: hasta 6 meses y posterior evaluación.
+                                    </li>
+                                </p>
+                                <p><strong>
+                                        Prótesis y ortesis:
+                                    </strong>
+                                </p>
+                                <p>
+                                    Se brindará el 100% de cobertura en las Prótesis e Implantes de colocación
+                                    interna permanente, siempre que su fabricación sea nacional.
+                                    En Ortesis y todo tipo de Prótesis externa la cobertura de la Obra Social
+                                    será del 50%. No se reconocen las prótesis denominadas BIOELÉCTRICAS o
+                                    MAGNÉTICAS.
+                                    Los traslados son parte de este tipo de prestaciones.
+                                </p>
+                                <p> <strong>
+                                        Hemodiálisis:
+                                    </strong>
+                                </p>
+                                <p>
+                                    Se dará cobertura total (100%) al paciente hemodializado, siendo requisito
+                                    indispensable para la continuidad de la cobertura, la inscripción de los
+                                    pacientes en el INCUCAI, dentro de los treinta (30) días de iniciado el
+                                    tratamiento dialítico.
+                                </p>
+                                <p><strong>
+                                        Odontología:
+                                    </strong>
+                                </p>
+                                <p>
+                                    La Obra Social asegurará la cobertura de las siguientes prácticas:
+                                </p>
+                                    <ul>
+                                    <ol>
+                                        1. Consulta — Diagnóstico — Fichado — Plan de Tratamiento.
+                                    </ol>
+                                    <ol>
+                                        2. Consulta de urgencia.
+                                    </ol>
+                                    <ol>
+                                        3. Obturación de amalgama — cavidad simple; compuesta y compleja.
+                                    </ol>
+                                    <ol>
+                                        4. Obturación con tornillo en conducto.
+                                    </ol>
+                                    <ol>
+                                        5. Obturación resma autocerrado — cavidad simple; compuesta y compleja.
+                                    </ol>
+                                    <ol>
+                                        6. Obturación resma fotocurado sector anterior.
+                                    </ol>
+                                    <ol>
+                                        7. Reconstrucción de ángulo en dientes anteriores.
+                                    </ol>
+                                    <ol>
+                                        8. Tratamiento endodóntico en unirradiculares y multirradiculares.
+                                    
+                                    </ol>
+                                    <ol>
+                                        9. Biopulpectónica parcial — preropulpectomía.
+                                    </ol>
+                                    <ol>
+                                        10. Cepillado mecánico.
+                                    </ol>
+                                    <ol>
+                                        11 .Consultas preventivas — Terapias gluoradas.
+                                    </ol>
+                                    <ol>
+                                        12.Selladores de surco, fosas, fisuras.
+                                    </ol>
+                                    <ol>
+                                        13.Tratamiento de gingivitis.
+                                    </ol>
+                                    <ol>
+                                        14. Corona de acero provisoria.
+                                    </ol>
+                                    <ol>
+                                        15. Mantenedor de espacio.
+                                    </ol>
+                                    <ol>
+                                        16. Tratamiento de enfermedad periodental
+                                    </ol>
+                                    <ol>
+                                        17. Franoctomía.
+                                    </ol>
+                                    <ol>                                       
+                                        18. Extracción dentaria y de cuerpo extraño
+                                    </ol>
+                                    <ol>
+                                        19.Tratamiento de la osteomielitis.
+                                    </ol>
+                                    <ol>
+                                        20. Liberación de dientes retenidos.
+                                    </ol>
+                                    <ol>
+                                        21. Incisión y drenaje de absesos.
+                                    </ol>
+                                    <ol>
+                                        22. Radiografía dentales.
+                                    </ol>
+                                    <ol>
+                                        23.y otros estudios.
+                                    </ol>
+                                </ul>
+                                <p>
+                                    <strong>
+                                        Co-seguro Odontológico:
+                                    </strong>
+                                </p>
+                                <p>
+                                    Será de $ 4,00 para niños de hasta 15 años y para mayores de 65 años.
+                                    Co-seguro de $ 7,00 para beneficiarios que tengan entre 16 y 65 años.
+                                    El co-seguro se abonará al profesional tratante.
+                                </p>
+                                <p><strong>
+                                    Medicamentos:
+                                </strong>
+                                </p>
+                                <p>
+                                    <strong>La cobertura que otorga la Obra Social:</strong>
+                                </p>
+                                    <ul>
+                                        <li>
+                                            40% ambulatorio con Vademecum de O.S. (genéricos)
+                                        </li>
+                                        <li>
+                                            70% en patologías crónicas según listado de Res. 310/04 MS (conforme al
+                                            precio de referencia-monto fijo)
+                                        </li>
+                                        <li>
+                                            100% internados
+                                        </li>
+                                        <li>
+                                            100% eritropoyetina
+                                        </li>
+                                        <li>
+                                            100% oncológicos: según protocolos nacionales
+                                        </li>
+                                        <li>
+                                            100%ondasentron
+                                        </li>
+                                        <li>
+                                             100% insulina, tirillas reactivas. (400 u 800) antidiabéticos orales
+                                        </li>
+                                        <li>
+                                             100% interferon
+                                        </li>
+                                        <li>
+                                            100% factor VIII — Antihemofílico
+                                        </li>
+                                        <li>
+                                            100% medicación Anti HIV y anti SIDA
+                                        </li>
+                                        <li>
+                                            100% inmuno supresores
+                                        </li>
+                                        <li>
+                                            70% antidiabéticos orales
+                                        </li>
+                                        <li>
+                                            tirillas reactivas (400 anuales/800 según tipo de diabetes)
+                                        </li>
+                                        <li>
+                                            100% mestinon 60 gr. (Res. 791/99 MAS)
+                                        </li>
+                                        <li>
+                                            Cobertura al 100 % de PIRIDESTIGMINA para tratamiento de:
+                                        </li>
+                                    </ul>
+                                    
+                                    <strong>
+                                        Anticonceptivos
+                                    </strong>
+                                    <p>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            1-
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                        data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            1-ATENCIÓN PRIMARIA Y SECUNDARIA:
-                                            Programas de Prevención Primaria y Secundaria
-                                            
-                                            COBERTURA AL 100%
-                                            Programa Materno Infantil:
-                                            Con una cobertura al 100 % de la maternidad, del parto y del recién nacido se trata de ampliar el Programa Materno Infantil, a través de las practicas que se detallan:
-                                            Control del Embarazo:
-                                            se proporcionara gratuitamente a la beneficiaria:
-                                            
-                                            a)-Examen Ginecológico, Papanicolaou y Colposcopia
-                                            b)-Examen de laboratorio de rutina con serología para la detección de Sífilis y Chagas.
-                                            c)-Grupo Sanguíneo y Factor RH.
-                                            d)-Análisis de orina completo.
-                                            e)-Vacunación: Tétanos y Sabin.
-                                            f)- Dos ecografías obstétricas
-                                            
-                                            Para el control del Recien Nacido :
-                                            Estudios de detección de previstos por la ley nº 26.279
-                                            Fenilcetonuria
-                                            Hipotiroidismo congénito
-                                            Enfermedad Fibroquistica
-                                            Vacunación de BCG y Hepatitis B
-                                            Galactocemia
-                                            Hiperplasia suprarrenal congénita
-                                            Deficiencia de Biotimidasa
-                                            Retimografia del prematuro
-                                            Chagas
-                                            Sífilis del recién nacido
-                                            Programa de Prevención
-                                            Sr. Afiliado:
-                                            Se ha previsto desarrollar en el presente periodo los programas de prevención que se detallan y de los cuales ha comenzado una campaña de difusión referida a la gratuidad de la atención, a los alcances de los mismos, sus contenidos, periodos de desarrollo y centro de atención a su servicio.
-                                            La información esta contenida en afiches colocado en la delegación, folletos de distribución generalizada y toda inquietud que desee expresar el afiliado o que necesite escuchar para ampliar su información presentarse personalmente en su respectiva delegación o llamar telefónicamente.
-                                            Usted puede adherirse a los programas, con solo llamar y expresar su deseo de pertenencia
-                                            Deseamos contar con su presencia.
-                                            Es necesario prevenir, evitando la Enfermedad
-                                            
-                                            Programa de Prevención del cáncer Femenino.
-                                            Cobertura de medicación que figure en el programa Nacional de Garantía de Calidad de la Atención Médica
-                                            Se Excluyen de la cobertura todo tipo de tratamiento y/o protocolos de carácter experimental o en fase de prueba
-                                            Programa de prevención de Cáncer de Mama
-                                            Prevención de Cáncer de Cuello Uterino
-                                            Programa Materno Infantil
-                                            Programa de Prevención Odontológica
-                                            Programa de Salud Sexual, Procreación Responsable (Ley 25673) y sida
-                                            Programa de Detección precoz de Diabetes Mellitus (Pronadia) 
-                                            . 100% Insulina
-                                            . 70% Hipoglucemiantes orales
-                                            . Tirillas Reactivas para determinar :
-                                            . Glucosa en orina 70%
-                                            . Acetona en Orina 70%
-                                            . Glucosa y Acetona en orina 70%
-                                            Programa  de prevención de enfermedades cardiovasculares
-                                            Programa de discapacitados:
-                                            Cobertura médica total y gratuita (ambulatorio e internación)
-                                            Cobertura del tratamiento de rehabilitación
-                                            Cobertura de muletas y silla de ruedas
-                                            Cobertura de escolaridad, transporte y toda otra necesidad
-                                            
-                                            Programa de Salud Sexual y Procreación Responsable
-                                            Entrega gratuita de anticonceptivos y profilácticos a grupos bajo programa
-                                            
-                                            Intervención de contracepción Quirúrgica Ley Nº 26130
-                                            En cumplimiento de la citada norma, la Obra Social efectúa sin cargo, a través de los Prestadores de Cartilla, la cobertura de practicas denominadas Ligadura de Trompas de Falopio y ligadura de conductos deferentes o vasectomía, a toda persona capaz, mayor de edad que lo requiera formalmente; siendo el requisito previo, que otorgue su consentimiento informado.
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            2-ATENCIÓN SECUNDARIA:
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                        data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            • Asistencia ambulatoria.
-                                            • Consultas médicas en consultorio, domicilio e internación.
-                                            • Prácticas y estudios complementarios ambulatorios -diagnósticos y terapéuticos.
-                                            • Internación 100% en institucional hospital día o domiciliaria.
-                                            Salud Mental:
-                                            • Prevención en salud mental.
-                                            • Prestaciones cubiertas.
-                                            
-                                            • Atención ambulatoria, hasta 30 sesiones cada 12 meses (4 consultas/mensuales)
-                                            • Consulta Psiquiátrica-Psicológica.
-                                            • Psicoterapia de familia y de pareja.
-                                            • Entrevista y tratamiento psicopedagógico.
-                                               • Psicodiagnóstico.
-                                               • Internación Agudos: hasta 30 días cada 12 meses.
-                                               • Hospital de día: hasta 30 días cada 12 meses.
-                                              Otros
-                                                • Estimulación temprana de acuerdo al P.M.O.
-                                                • Traumatología: hasta 30 días y posterior evaluación.
-                                                • Grandes accidentados: hasta 6 meses y posterior evaluación.
-                                                Prótesis y ortesis:
-        Se brindará el 100% de cobertura en las Prótesis e Implantes de colocación interna permanente, siempre que su fabricación sea nacional.
-        En Ortesis y todo tipo de Prótesis externa la cobertura de la Obra Social será del 50%. No se reconocen las prótesis denominadas BIOELÉCTRICAS o MAGNÉTICAS.
-Los traslados son parte de este tipo de prestaciones.
+                                        Soporte Clínico de la Quimioterapia
+                                        Miastenia Gravis (Res. 791/99)
+                                    </p>
+                                    <p>
+                                        Cobertura al 100% de medicamentos de uso anticonceptivo
+    
+                                        Anticonceptivos intrauterino, dispositivos de cobre; condones con o sin
+                                        espermicida, diafragmas y espermicidas, cobertura al 100% (Ley 25673)
+                                        Cobertura al 100% de medicación de soporte clínico de la quimioterapia
+                                        destinada a la prevención y tratamiento de los vómitos inducidos por los
+                                        agentes antineoglacicos según protocolo aprobado
+                                        Cobertura al 100% de la medicación analgésica destinada al manejo del dolor
+                                        pacientes oncológicos
+                                    </p> 
+                                        
 
-Hemodiálisis:
-Se dará cobertura total (100%) al paciente hemodializado, siendo requisito indispensable para la continuidad de la cobertura, la inscripción de los pacientes en el INCUCAI, dentro de los treinta (30) días de iniciado el tratamiento dialítico.
-
-Cobertura de otoamplífonos:
-Se asegura al 100% en niños de hasta 15 años.
-
-Odontología:
-La Obra Social  asegurará la cobertura de las siguientes prácticas:
-1. Consulta — Diagnóstico — Fichado — Plan de Tratamiento.
-2. Consulta de urgencia.
-3. Obturación de amalgama — cavidad simple; compuesta y compleja.
-4. Obturación con tornillo en conducto.
-5. Obturación resma autocerrado — cavidad simple; compuesta y compleja.
-6. Obturación resma fotocurado sector anterior.
-7. Reconstrucción de ángulo en dientes anteriores.
-8. Tratamiento endodóntico en unirradiculares y multirradiculares.
-9. Biopulpectónica parcial — preropulpectomía.
-10. Cepillado mecánico.
-11 .Consultas preventivas — Terapias gluoradas.
-12.Selladores de surco, fosas, fisuras.
-13.Tratamiento de gingivitis.
-14. Corona de acero provisoria.
-15. Mantenedor de espacio.
-16. Tratamiento de enfermedad periodental
-17. Franoctomía.
-18. Extracción dentaria y de cuerpo extraño
-19.Tratamiento de la osteomielitis.
-20. Liberación de dientes retenidos.
-21. Incisión y drenaje de absesos.
-22. Radiografía dentales.
-23.y otros estudios.
-
-Co-seguro Odontológico:
-Será de $ 4,00 para niños de hasta 15 años y para mayores de 65 años.
-Co-seguro de $ 7,00 para beneficiarios que tengan entre 16 y 65 años.
-El co-seguro se abonará al profesional tratante.
-
-Medicamentos:
-   -La cobertura que otorga la Obra Social:
-• 40% ambulatorio con Vademecum de O.S. (genéricos)
-• 70% en patologías crónicas según listado de Res. 310/04 MS (conforme al precio de referencia-monto fijo)
-• 100% internados
-• 100% eritropoyetina
-• 100% oncológicos: según protocolos nacionales
-• 100%ondasentron
-• 100% insulina, tirillas reactivas. (400 u 800) antidiabéticos orales
-• 100% interferon
-• 100% factor VIII — Antihemofílico
-• 100% medicación Anti HIV y anti SIDA
-• 100% inmuno supresores
-• 70% antidiabéticos orales
-• tirillas reactivas (400 anuales/800 según tipo de diabetes)
-• 100% mestinon 60 gr. (Res. 791/99 MAS)
-• Cobertura al 100 % de PIRIDESTIGMINA para tratamiento de:
-
-Anticonceptivos
-Soporte Clínico de la Quimioterapia
-Miastenia Gravis (Res. 791/99) 
-• Cobertura al 100% de medicamentos de uso anticonceptivo
-
-Anticonceptivos intrauterino, dispositivos de cobre; condones con o sin espermicida, diafragmas y espermicidas, cobertura al 100% (Ley 25673)
-Cobertura al 100% de medicación de soporte clínico de la quimioterapia destinada a la prevención y tratamiento de los vómitos inducidos por los agentes antineoglacicos según protocolo aprobado
-Cobertura al 100% de la medicación analgésica destinada al manejo del dolor pacientes oncológicos
-                                        </div>
-                                    </div>
-                                </div>
-            
                             </div>
                         </div>
                     </div>
+                    <!-- 
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ACTUALIZACIÓN DE LA CARTILLA MÉDICA:
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-
-                            </div>
                         </div>
                     </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                ACTUALIZACIÓN DE LA CARTILLA MÉDICA:
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-
-                            </div>
-                        </div>
-                    </div>
+                </div> -->
 
 
                 </div>
