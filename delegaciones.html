@@ -1,117 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delegaciones</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
-<body>
+
+<body id="app">
     <header>
-        <nav class="navbar navbar-expand-lg text-white  fixed fs-5 fw-bold" style="background-color: #73c8d3;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">OSPES</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+    </header>
+    <main>
+
+        <section class="section_delegaciones text-center d-flex flex-column align-content-center  ">
+            <h1>Delegaciones</h1>
+            <div class="d-flex flex-column">
+                <div class="d-flex flex-row ">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Buenos Aires</h5>
+                            <button id="delegacion1" class="button_delegacion" @click="showModal(`delegacion1`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Catamarca</h5>
+                            <button id="delegacion2" class="button_delegacion" @click="showModal(`delegacion2`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chubut</h5>
+                            <button id="delegacion3" class="button_delegacion" @click="showModal(`delegacion3`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
                     </div>
 
-                    <div class="offcanvas-body align-items-center">
-                        <h1>
-                            <img src="./asserts/img/logo1.4.png" alt="" style="width: 100px;">
-                            Ospes
-                        </h1>
-                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 ">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="./delegaciones.html">Delegaciones</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Plan Medico Asistencial</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Sitios de interes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-                            </li>
-                        </ul>
-                        <button type="button">
-                            <svg style="width:36px;height:36px" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z" />
-                            </svg>
-                        </button>
+                </div>
+                <div class="d-flex flex-row ">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cordoba</h5>
+                            <button id="delegacion4" class="button_delegacion" @click="showModal(`delegacion4`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Corrientes</h5>
+                            <button id="delegacion5" class="button_delegacion" @click="showModal(`delegacion5`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Entre Rios</h5>
+                            <button id="delegacion6" class="button_delegacion" @click="showModal(`delegacion6`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-flex flex-row ">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Formosa</h5>
+                            <button id="delegacion7" class="button_delegacion" @click="showModal(`delegacion7`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jujuy</h5>
+                            <button id="delegacion8" class="button_delegacion" @click="showModal(`delegacion8`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">La Pampa</h5>
+                            <button id="delegacion9" class="button_delegacion" @click="showModal(`delegacion9`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-flex flex-row ">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">La Rioja</h5>
+                            <button id="delegacion10" class="button_delegacion" @click="showModal(`delegacion10`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mendoza</h5>
+                            <button id="delegacion11" class="button_delegacion" @click="showModal(`delegacion11`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Misiones</h5>
+                            <button id="delegacion12" class="button_delegacion" @click="showModal(`delegacion12`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-flex flex-row ">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rio Negro</h5>
+                            <button id="delegacion13" class="button_delegacion" @click="showModal(`delegacion13`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Salta</h5>
+                            <button id="delegacion14" class="button_delegacion" @click="showModal(`delegacion14`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">San Juan</h5>
+                            <button id="delegacion15" class="button_delegacion" @click="showModal(`delegacion15`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row ">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">San Luis</h5>
+                            <button id="delegacion16" class="button_delegacion" @click="showModal(`delegacion16`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Santiago del Estero</h5>
+                            <button id="delegacion17" class="button_delegacion" @click="showModal(`delegacion17`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tierra del Fuego</h5>
+                            <button id="delegacion18" class="button_delegacion" @click="showModal(`delegacion18`)"
+                                style="background-color: #38618C; color: white;">Información</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tucumán</h5>
+                        <button id="delegacion19" class="button_delegacion" @click="showModal(`delegacion19`)"
+                            style="background-color: #38618C; color: white;">Información</button>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    
-    <main>
-        
-        <section class="m-4">
-            <div class="d-flex flex-row justify-content-evenly ">
-        <div class="card" style="width: 20rem;">
-            <img src="./asserts/img/bsas.jpg" class="card-img-top" alt="imagenbsas">
-            <div class="card-body">
-              <h5 class="card-title text-center">Buenos Aires</h5>
-              <p class="card-text">BELGRANO 1090 (Zárate)</p>
-              <p>Cobertura para Bs. As. es 60 Kilometros al rededor de Zárate.</p>
-                <p>Tel.: 03487-437660</p>
-                <p>Código Postal 2800</p>
-                <p>Email: 
-                    <a href="soesgypezarate@hotmail.com">soesgypezarate@hotmail.com</a>  </p>
-                <p>Encargado de Delegación: Copertari Emilio</p>
-            </div>
-          </div>
 
-          <div class="card" style="width: 20rem;">
-            <img src="..." class="card-img-top" alt="imagencatamarca">
-            <div class="card-body">
-              <h5 class="card-title">Catamarca</h5>
-              <p class="card-text">SARMIENTO 1051 (San Fdo.del Valle)</p>
-                <p>Tel.: 03833-455767-15506316</p>
-                <p>Código Postal 4700</p>
-                <p>Email: 
-                    <a href="nico_saad@hotmail.com">nico_saad@hotmail.com</a>  
-                </p>
-                <p>Encargado de Delegación: Saad Nicolás</p>
-            </div>
-          </div>
-          <div class="card" style="width: 20rem;">
-            <img src="..." class="card-img-top" alt="imagenchubut">
-            <div class="card-body">
-              <h5 class="card-title">Chubut</h5>
-              <p class="card-text">MITRE 766 (Esquel)</p>
-                <p>Tel.Fax:02945 452317 </p>
-                <p>Código Postal 9200</p>
-                <p>Email: 
-                    <a href="ospeschubut@hotmail.com">ospeschubut@hotmail.com</a> 
-                </p>
-                <p>Encargado de Delegación: Lisandro A. Viñales</p>
-            </div>
-          </div>
-        </div>  
-        </section>    
+            <!-- <modal class="modal-mask" v-if="mostrarmodal===true" @close="mostrarmodal=false">
+                <div class="modal-wrapper">
+                    <div class="modal-container">
+                        <div class="modal-header">
+                            <h4 class="" slot="header">Información</h4>
+                        </div>
+                        <div class="modal-body ">
+                            <div class="" slot="body">
+                                <p>Direccion:{{Direccion}}</p>
+                                <p>Telefono:{{Telefono}}</p>
+                                <p>Cp: {{Cp}}</p>
+                                <p>Email:{{Email}}</p>
+                                <p>Encargado Delegación:{{EncargadoDelegacion}}</p>
+                                <p>Ubicación:{{Ubicación}}</p>    
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="modal-default-button" @click="mostrarmodal=false"
+                                slot="footer">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </modal> -->
+
+
+        </section>
     </main>
-    
     <footer>
 
     </footer>
+    <script type="text/x-template" id="modal-template">
+        <transition name="modal">
+          <div v-if="show" class="modal-mask">
+            <div class="modal-wrapper">
+              <div class="modal-container">
+                <div class="modal-header">
+                  <slot name="header">
+                    default header
+                  </slot>
+                </div>
+                <div class="modal-body">
+                  <slot name="body">
+                    default body
+                  </slot>
+                </div>
+  
+                <div class="modal-footer">
+                  <slot name="footer">
+                    <button class="modal-default-button" @click="$emit('close')">
+                       Cerrar
+                    </button>
+                  </slot>
+                </div>
+              </div>
+            </div>
+          </div>
+        </transition>
+    </script>
     <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
     <script src="./main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
+
 </html>

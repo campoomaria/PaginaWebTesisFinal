@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmacias</title>
+    <title>Productos</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -64,7 +64,7 @@
     <main>
         <div class="cabecerafarmacia">
             <img src="./asserts/img/imagen4.jpg" alt="imagenheader1">
-            <h2 class="text-center m-2">Farmacias</h2>
+            <h2 class="text-center m-2">Productos</h2>
         </div>
         <div class="d-flex flex-row m-3 text-center justify-content-around align-items-center">
             <div class="col-8">
@@ -74,48 +74,43 @@
                 </form>
             </div>
             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Nueva Farmacia
+                Nuevo Producto
             </button>
         </div>
 
-        <!-- Modal para el ingreso de una farmacia nueva -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabelproducto" aria-hidden="true">
             <div class="modal-dialog ">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Nueva Farmacia</h5>
+                        <h5 class="modal-title" id="exampleModalLabelproducto">Nuevo Producto</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body-farmacia">
+                    <div class="modal-body-producto">
                         
-                        <form action="formfarmacianueva" data-bs-spy="scroll" class="formfarmacianueva d-flex flex-column needs-validation  novalidate">
-                            <div class="div-form-farmacia">
-                                <label for="nombresfarmacia">Nombre:</label>
-                                <input type="text" v-model="nombresfarmacias"  class="form-control" required minlength="4" maxlength="60">                                
+                        <form action="formproductonuevo" data-bs-spy="scroll" class="formproductonuevo d-flex flex-column needs-validation  novalidate">
+                            <div class="div-form-productos">
+                                <label for="idRubroprod">idRubro</label>
+                                <input type="number" v-model="idRubroprod"  class="form-control" required >                                
                             </div>
-                            <div class="div-form-farmacia">
-                                <label for="cuilfarmacia">CUIL:</label>
-                                <input type="number" v-model="cuilfarmacia"  class="form-control" required minlength="11" maxlength="11">                                
+                            <div class="div-form-producto">
+                                <label for="nombreproducto">Nombre Producto</label>
+                                <input type="text" v-model="nombreproducto"  class="form-control" required required minlength="4" maxlength="60">                                
                             </div>
-                            <div class="div-form-farmacia">
-                                <label for="domiciliofarmacia">Domicilio:</label>
-                                <input type="text" v-model="domiciliofarmacia" class="form-control" required minlength="4" maxlength="260">                                
+                            <div class="div-form-producto">
+                                <label for="fechavencimiento">Fecha de Vencimiento:</label>
+                                <input type="date" v-model="fechavencimiento" class="form-control" required minlength="4" maxlength="260">                                
                             </div>
-                            <div class="div-form-farmacia">
-                                <label for="Provinciafarmacia">"Provincia":</label>
-                                <input type="text" v-model="Provinciafarmacia"  class="form-control" required minlength="4" maxlength="20">                                
+                            <div class="div-form-producto">
+                                <label for="des"Cp"roducto">Descuento:</label>
+                                <input type="number" v-model="des"Cp"roducto"  class="form-control" required >                                
                             </div>
-                            <div class="div-form-farmacia">
-                                <label for="localidadfarmacia">Localidad:</label>
-                                <input type="text" v-model="localidadfarmacia" class="form-control" required minlength="4" maxlength="30">                                
+                            <div class="div-form-producto">
+                                <label for="marcaproducto">Marca:</label>
+                                <input type="text" v-model="marcaproducto" class="form-control" required minlength="4" maxlength="30">                                
                             </div>
-                            <div class="div-form-farmacia">
-                                <label for="Telefonofarmacia">"Telefono":</label>
-                                <input type="number" v-model="Telefonofarmacia"  class="form-control" required maxlength="11">                                
-                            </div>
-                            <div class="div-form-farmacia">
-                                <label for="Emailfarmacia">"Email":</label>
-                                <input type="Email" v-model="Emailfarmacia"  class="form-control" required placeholder="nombre@ejemplo.com">                                
+                            <div class="div-form-producto">
+                                <label for="descripcionproducto">Descripción:</label>
+                                <textarea class="form-control" v-model="descripcionproducto" aria-label="With textarea"required maxlength="300"></textarea>       
                             </div>
                         </form>
                     </div>
@@ -132,28 +127,26 @@
                 <thead class="head_table_farmacia">
                     <tr>
                         <td>Identificador</td>
-                        <td>Nombre</td>
-                        <td>Cuil</td>
-                        <td>Domicilio</td>
-                        <td>"Provincia"</td>
-                        <td>Localidad</td>
-                        <td>"Telefono"</td>
-                        <td>Correo Electronico</td>
+                        <td>idRubro</td>
+                        <td>Producto</td>
+                        <td>Fecha Venc.</td>
+                        <td>Descuento</td>
+                        <td>Marca</td>
+                        <td>Descripción</td>
                         <td>Estado</td>
                         <td>Acciones</td>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="farm in Farmacias">
-                        <td>{{farm.idFarmacia}}</td>
-                        <td>{{farm.farmacia}}</td>
-                        <td>{{farm.cuil}}</td>
-                        <td>{{farm.domicilio}}</td>
-                        <td>{{farm."Provincia"}}</td>
-                        <td>{{farm.localidad}}</td>
-                        <td>{{farm."Telefono"}}</td>
-                        <td>{{farm."Email"}}</td>
-                        <td>{{farm.estado}}</td>
+                    <tr v-for="prod in Productos">
+                        <td>{{prod.idProducto}}</td>
+                        <td>{{prod.idRubro}}</td>
+                        <td>{{prod.producto}}</td>
+                        <td>{{prod.fechaVencimiento}}</td>
+                        <td>{{prod.descuento}}</td>
+                        <td>{{prod.marca}}</td>
+                        <td>{{prod.descripcion}}</td>
+                        <td>{{prod.estado}}</td>
                         <td>
                             <div class="m-2">
                                 <button type="button" title="Modificar" class="btn btn-sm">

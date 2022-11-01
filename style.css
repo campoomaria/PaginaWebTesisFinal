@@ -25,7 +25,7 @@
     
 }
 
-.head_table_farmacia{
+.head_table_farmacia, .head_table_instmed{
     background-color: #73c8d3;
     font-weight: 700;    
 }
@@ -66,26 +66,109 @@
     margin: 15px;
     
 }
-.formfarmacianueva{
+.formfarmacianueva, .formproductonuevo{
     margin: 5px;
     
 }
 
-.div-form-farmacia{
+.div-form-farmacia, .div-form-producto, .div-form-instmedica{
     margin-bottom: 10px;
 }
-.div-form-farmacia input{
+.div-form-farmacia input, .div-form-producto input, .div-form-instmedica input{
     height: auto;
     width: 100%;
 }
 
-#carouselExampleDark{
-    width: 100% !important;
-    height: auto;
-    
+.div-form-producto textarea{
+    resize: none;
+    height: 80px;
+    width: 100%;
 }
 
-#carouselExampleDark img{
-    width: 760px;
-    height: 496px ;
+
+/* .modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: table;
+    transition: opacity 0.3s ease;
+  }
+  
+  .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .modal-container {
+    width: 310px;
+    height: 350px;
+    margin: 0px auto;
+    padding: 30px 30px;
+    background: #38618C;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+    transition: all 0.3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  .modal-header{
+    color: white;
+  }
+  .modal-header h6 {
+    margin-top: 0;
+    color: white;
+  }
+  
+  .modal-body_login {
+   color:white;
+  }
+  
+  .modal-default-button {
+    float: right;
+    background-color: #38618C;
+    color: white;
+    border-radius: 15px;
+  }
+  
+  .modal-enter {
+    opacity: 0;
+  }
+  
+  .modal-leave-active {
+    opacity: 0;
+  }
+  
+  .modal-enter .modal-container,
+  .modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+   */
+
+.section_planmedico button{
+  font-weight: 700;  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
