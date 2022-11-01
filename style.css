@@ -14,9 +14,15 @@
     
 }
 
-.nav-items a{
+/*.nav-items a{
     font-size: 820px;
+}*/
+
+a.nav-link.active {
+    font-size: xx-large;
+    margin: 4px;
 }
+
 .tabla_farmacia{
     border: 1px solid black;
     text-align: center;
@@ -87,5 +93,13 @@
 
 #carouselExampleDark img{
     width: 760px;
-    height: 496px ;
+    height: 450px ;
+}
+
+.conteiner-form input{
+    width: 400px !important;
+}
+
+.conteiner-form a{
+    text-decoration: none;
 }
