@@ -32,7 +32,7 @@ a.nav-link.active {
     
 }
 
-.head_table_farmacia{
+.head_table_farmacia, .head_table_instmed{
     background-color: #73c8d3;
     font-weight: 700;    
 }
@@ -73,18 +73,25 @@ a.nav-link.active {
     margin: 15px;
     
 }
-.formfarmacianueva{
+.formfarmacianueva, .formproductonuevo{
     margin: 5px;
     
 }
 
-.div-form-farmacia{
+.div-form-farmacia, .div-form-producto, .div-form-instmedica{
     margin-bottom: 10px;
 }
-.div-form-farmacia input{
+.div-form-farmacia input, .div-form-producto input, .div-form-instmedica input{
     height: auto;
     width: 100%;
 }
+
+.div-form-producto textarea{
+    resize: none;
+    height: 80px;
+    width: 100%;
+}
+
 
 #carouselExampleDark{
     width: 100% !important;
@@ -104,3 +111,5 @@ a.nav-link.active {
 .conteiner-form a{
     text-decoration: none;
 }
+
+
