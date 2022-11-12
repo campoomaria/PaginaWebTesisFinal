@@ -1,115 +1,265 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}
-
-.imagencabecera{
-    width: 430px;
+  }
+  
+  .navbar-logo img {
+    width: 90px;
     height: auto;
-}
-
-.nav-items{
-    font-weight: 700;
-    
-}
-
-/*.nav-items a{
-    font-size: 820px;
-}*/
-
-a.nav-link.active {
-    font-size: xx-large;
-    margin: 4px;
-}
-
-.tabla_farmacia{
+  }
+  .conteiner_link_nav a {
+    color: white !important;
+    font-size: x-large;
+  }
+  
+  .conteiner_link_nav button {
+    border: none;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .conteiner_link_nav {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .tabla_farmacia {
     border: 1px solid black;
     text-align: center;
-    margin:auto;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-.head_table_farmacia, .head_table_instmed{
+  }
+  
+  .head_table_farmacia,
+  .head_table_instmed {
     background-color: #73c8d3;
-    font-weight: 700;    
-}
-
-.cabecerafarmacia img{
+    font-weight: 700;
+  }
+  
+  .cabecerafarmacia img {
     width: 100%;
     height: 300px;
-}
-
-.cabecerafarmacia{
+  }
+  
+  .cabecerafarmacia {
     position: relative;
     text-align: center;
-}
-.cabecerafarmacia h2{
+  }
+  .cabecerafarmacia h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 80px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.offcanvas-body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .offcanvas-body {
     display: flex;
     flex-direction: row;
-    /* align-items: center;
-    justify-items: center; */
-}
-.offcanvas-body button{
+  }
+  .offcanvas-body button {
     background: none;
     border: 0;
-}
-.offcanvas-body h1{
+  }
+  .offcanvas-body h1 {
     color: black;
-}
-
-.modal-body-farmacia{
+  }
+  
+  .modal-body-farmacia {
     margin: 15px;
-    
-}
-.formfarmacianueva, .formproductonuevo{
+  }
+  .formfarmacianueva,
+  .formproductonuevo {
     margin: 5px;
-    
-}
-
-.div-form-farmacia, .div-form-producto, .div-form-instmedica{
+  }
+  
+  .div-form-farmacia,
+  .div-form-producto,
+  .div-form-instmedica {
     margin-bottom: 10px;
-}
-.div-form-farmacia input, .div-form-producto input, .div-form-instmedica input{
+  }
+  .div-form-farmacia input,
+  .div-form-producto input,
+  .div-form-instmedica input {
     height: auto;
     width: 100%;
-}
-
-.div-form-producto textarea{
+  }
+  
+  .div-form-producto textarea {
     resize: none;
     height: 80px;
     width: 100%;
-}
-
-
-#carouselExampleDark{
+  }
+  
+  #carouselExampleDark {
     width: 100% !important;
     height: auto;
-    
-}
-
-#carouselExampleDark img{
+  }
+  
+  #carouselExampleDark img {
     width: 760px;
-    height: 450px ;
-}
-
-.conteiner-form input{
+    height: 450px;
+  }
+  
+  .conteiner-form input {
     width: 400px !important;
-}
-
-.conteiner-form a{
+  }
+  
+  .conteiner-form a {
     text-decoration: none;
-}
-
-
+  }
+  
+  .modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: table;
+    transition: opacity 0.3s ease;
+  }
+  
+  .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .modal-container {
+    width: 350px;
+    height: auto;
+    margin: 0px auto;
+    padding: 30px 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+    transition: all 0.3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  .modal-header {
+    color: black;
+  }
+  .modal-header h4 {
+    margin-top: 0;
+    color: black;
+    font-weight: 700;
+  }
+  
+  .modal-body {
+    color: black;
+    text-align: start;
+  }
+  
+  .modal-enter {
+    opacity: 0;
+  }
+  
+  .modal-leave-active {
+    opacity: 0;
+  }
+  
+  .modal-enter .modal-container,
+  .modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  .section_delegaciones {
+    /* background-image: url("./asserts/img/Universoazul.png"); */
+    background-repeat: repeat-y;
+    background-size: 100%;
+    
+  }
+  .section_delegaciones h1{
+    padding-bottom: 20px;
+  }
+  
+  .sub_card {
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .sub_card .card {
+    width: 100px;
+    height: 300px;
+    transition: all 0.25s;
+  }
+  
+  .sub_card .card img {
+    width: auto;
+    height: 300px;
+  }
+  
+  .sub_card button,
+  .modal-default-button,
+  .section_contacto button,
+  .button_login {
+    padding: 5px;
+    border: 1px white;
+    border-radius: 15px;
+    background-color: rgb(255, 128, 0);
+    color: white;
+  }
+  
+  .sub_card .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section_sitiointeres {
+    /* background-image: url("./asserts/img/background5.jpg"); */
+    /* background-size:100%; */
+    width: auto;
+    height: 600px;
+    padding: 10px;
+    padding-top: 50px;
+  }
+  
+  
+  .card_sitiodeinteres{
+    margin-top: 100px;
+    padding: 5px;
+    padding-left: 5px;
+    justify-content: space-evenly;
+  }
+  
+  
+  .card_sitiodeinteres .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section_contacto{
+    /* background-image: url("./asserts/img/latidos.png"); */
+  /* background-size: 100%; */
+  height: 600px;
+  width: auto;
+  padding-top: 40px;
+  text-align: center;
+  color: black;
+  }
+  .section_planmedico{
+    height: 600px;
+    width: auto;
+    text-align: center;
+  }
+  
+  .container_button_login {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  
+  /* .carousel_planmedico .carousel-item{
+   
+  } */
+  
+  body{
+    background-image: url("./asserts/img/Universoazul2.png");
+    background-repeat:inherit;
+    background-size: 100%;
+  }
