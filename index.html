@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obra Social</title>
-    <link rel="shortcut icon" href="./asserts/img/Ospes.png"/>
+    <link rel="shortcut icon" href="./asserts/img/Ospes.png" />
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
-<body id="app" >
+<body id="app">
     <header>
-        <nav class="navbar navbar-expand-lg " style="background-color: rgb(0, 0, 0,0.8);">
+        <nav class="navbar navbar-expand-lg " style="background-color: #90dbf4c0;">
             <div class="container-fluid">
                 <a class="navbar-logo" href="./index.html"><img src="./asserts/img/Ospes.png" alt="imagenlogo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -384,217 +384,249 @@
     </section>
     <section id="planmedico" class="section_planmedico">
         <h1>Planes Medicos</h1>
-        <div class="carousel_planmedico">
-            <div id="carouselplanmedico" class="carousel " data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card" style="width: 40rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">¿QUIÉNES SON LOS BENEFICIARIOS?</h5>
-                                <p>
-                                    Son los beneficiarios de nuestra Obra Social según la Ley 23.660 —Art. 9, eltitular
-                                    afiliado y su grupo familiar primario,
-                                    Entendiéndose por ello a:
-                                </p>
-                                <li>El cónyuge del afiliado/a titular</li>
-                                <li>Los hijos hasta los veintiún (21) años, no emancipados por habilitación
-                                    de edad o ejercicio de actividad profesional, comercial o laboral
-                                </li>
-                                <li>Los hijos solteros mayores de veintiún (21) años y hasta los veinticinco
-                                    (25) años inclusive, que estén a exclusivo cargo del afiliado titular y que
-                                    cursen estudios regulares oficialmente reconocidos por la autoridad
-                                    pertinente.</li>
-                                <li>Los hijos incapacitados y a cargo del titular, cualquiera sea su edad y
-                                    siempre que acrediten la discapacidad mediante la certificación.
-                                </li>
-                                <li>Los hijos del cónyuge.
-                                </li>
-                                <li>Los menores cuya guarda y tutela haya sido acordada por autoridad judicial, que
-                                    reúnan
-                                    los requisitos establecidos por la ley.
-                                </li>
-                            </div>
-                        </div>
+        <div class="grupo_card">
+            <div class="card" style="width: 18rem;">
+                <img src="./asserts/img/medicortrabajando.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">¿Quiénes son los Beneficiarios?</h5>
+                    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#primermodal">
+                        Ver Información
+                    </button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./asserts/img/estetocopio.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> ¿Como puede Ud. hacer los trámites de afiliación?</h5>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#segundomodal">
+                        Ver Información
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="grupo_card">
+            <div class="card" style="width: 18rem;">
+                <img src="./asserts/img/doctorypaciente2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> Cobertura P.M.O.</h5>
+                    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#tercermodal">
+                        Ver información
+                    </button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./asserts/img/doctoypaciente1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> Atención Secundaria</h5>
+                    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#cuartomodal">
+                        Ver Información
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="primermodal" tabindex="-1" aria-labelledby="primermodal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="primermodal">Beneficiarios</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="carousel-item">
-
-                        <div class="card" style="width: 40rem;">
-                            <div class="card-body">
-                                <h5 class="card-title"> ¿Como puede Ud. hacer los trámites de afiliación?</h5>
-                                <p>
-                                    Concurriendo a la Delegación mas próxima a su domicilio allí
-                                    Presentara la siguiente documentación:
-                                </p>
-                                <p>
-                                    <strong> Titular:</strong>
-                                    DNI (Documento Nacional de Identidad)
-                                </p>
-                                <p>
-                                    <strong>
-                                        Cónyuge:</strong>
-                                    DNI de ambos + certificado o libreta de matrimonio
-                                </p>
-                                <p><strong>
-                                        Hijo menor de 21 años:
-                                    </strong>
-                                    DNI de ambos + partida de nacimiento
-                                </p>
-                                <p><strong>
-                                        Hijo mayor de 21 años y hasta 25 años estudiante:
-                                    </strong>
-                                    DNI de ambos + partida de nacimiento + certificado de estudios
-                                </p>
-                                <p>
-                                    <strong>
-                                        Hijo incapacitado, a cargo del titular:
-                                    </strong>
-                                    DNI de ambos + partida de nacimiento + certificado médico de Ministerio de
-                                    Salud que certifique enfermedad y grado de incapacidad.
-                                </p>
-                                <p><strong>
-                                        Menor a Cargo:
-                                    </strong>
-                                    DNI de ambos + constancias de guarda Tutela Judicial
-                                </p>
-                                <p>
-                                    Seguidamente se le entregara el carnet de Obra Social – Para presentar en toda
-                                    ocasión que requiera servicios.
-                                </p>
-                                <p>
-                                    ANTE CUALQUIER DUDA CONSULTE A SEDE CENTRAL
-                                    DE LUNES A VIERNES DE 9:00 a 17:00 horas
-                                    "Telefono": (011)4956-0954/FAX (011)4956-0321
-                                </p>
-
-                            </div>
-                        </div>
+                    <div class="modal-body text-left">
+                        <p>
+                            Son los beneficiarios de nuestra Obra Social según la Ley 23.660 —Art. 9, eltitular
+                            afiliado y su grupo familiar primario,
+                            Entendiéndose por ello a:
+                        </p>
+                        <li>El cónyuge del afiliado/a titular</li>
+                        <li>Los hijos hasta los veintiún (21) años, no emancipados por habilitación
+                            de edad o ejercicio de actividad profesional, comercial o laboral
+                        </li>
+                        <li>Los hijos solteros mayores de veintiún (21) años y hasta los veinticinco
+                            (25) años inclusive, que estén a exclusivo cargo del afiliado titular y que
+                            cursen estudios regulares oficialmente reconocidos por la autoridad
+                            pertinente.</li>
+                        <li>Los hijos incapacitados y a cargo del titular, cualquiera sea su edad y
+                            siempre que acrediten la discapacidad mediante la certificación.
+                        </li>
+                        <li>Los hijos del cónyuge.
+                        </li>
+                        <li>Los menores cuya guarda y tutela haya sido acordada por autoridad judicial, que
+                            reúnan
+                            los requisitos establecidos por la ley.
+                        </li>
                     </div>
-                    <div class="carousel-item">
-                        <div class="card" style="width: 40rem;">
-                            <div class="card-body">
-                                <h5 class="card-title"> COBERTURA P.M.O.</h5>
-                                <h4>
-                                    1-ATENCIÓN PRIMARIA Y SECUNDARIA:
-                                    Programas de Prevención Primaria y Secundaria
-                                </h4>
-                                <h4>
-                                    COBERTURA AL 100%
-                                </h4>
-                                <p><strong>
-                                        Programa Materno Infantil
-                                    </strong>
-                                </p>
-                                <p><strong>
-                                        Control del Embarazo
-                                    </strong>
-                                </p>
-                                <p>
-                                    <strong>
-                                        Para el control del Recien Nacido
-                                    </strong>
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card" style="width: 40rem;">
-                            <div class="card-body">
-                                <h5 class="card-title"> Programa de Prevención del cáncer Femenino.
-                                </h5>
-                                <p>
-                                    <li>
-                                    </li>
-                                    <li>
-                                        Cobertura de medicación que figure en el programa Nacional de Garantía de
-                                        Calidad de la Atención Médica
-                                    </li>
-                                    <li>
-                                        *Se Excluyen de la cobertura todo tipo de tratamiento y/o protocolos de
-                                        carácter experimental o en fase de prueba
-                                        1-Programa de prevención de Cáncer de Mama
-                                        2-Prevención de Cáncer de Cuello Uterino
-                                    </li>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card" style="width: 40rem;">
-                            <div class="card-body">
-                                <h5 class="card-title"> Atención Secundaria</h5>
-                                <p>
-                                    <li>
-                                        Asistencia ambulatoria.
-                                    </li>
-                                    <li>
-                                        Consultas médicas en consultorio, domicilio e internación.
-                                    </li>
-                                    <li>
-                                        Prácticas y estudios complementarios ambulatorios -diagnósticos y
-                                        terapéuticos.
-                                    </li>
-                                    <li>
-                                        Internación 100% en institucional hospital día o domiciliaria.
-                                    </li>
-                                </p>
-                                <p><strong>
-                                        Salud Mental:
-                                    </strong>
-                                </p>
-                                <p>
-                                    <li>
-                                        Prevención en salud mental.
-                                    </li>
-                                    <li>
-                                        Prestaciones cubiertas.
-                                    </li>
-                                    <li>
-                                        Atención ambulatoria, hasta 30 sesiones cada 12 meses (4
-                                        consultas/mensuales)
-                                    </li>
-                                    <li>
-                                        Consulta Psiquiátrica-Psicológica.
-                                    </li>
-                                    <li>
-                                        Psicoterapia de familia y de pareja.
-                                    </li>
-                                    <li>
-                                        Entrevista y tratamiento psicopedagógico.
-                                    </li>
-                                    <li>
-                                        Psicodiagnóstico.
-                                    </li>
-                                    <li>
-                                        Internación Agudos: hasta 30 días cada 12 meses.
-                                    </li>
-                                    <li>
-                                        Hospital de día: hasta 30 días cada 12 meses.
-                                    </li>
-                                </p>
-                                <p><strong>
-                                        Otros
-                                    </strong>
-                                </p>
-
-                            </div>
-                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselplanmedico"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselplanmedico"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
+        <div class="modal fade" id="segundomodal" tabindex="-1" aria-labelledby="segundomodal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="segundomodal">Afiliación</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Concurriendo a la Delegación mas próxima a su domicilio allí
+                            Presentara la siguiente documentación:
+                        </p>
+                        <p>
+                            <strong> Titular:</strong>
+                            DNI (Documento Nacional de Identidad)
+                        </p>
+                        <p>
+                            <strong>
+                                Cónyuge:</strong>
+                            DNI de ambos + certificado o libreta de matrimonio
+                        </p>
+                        <p><strong>
+                                Hijo menor de 21 años:
+                            </strong>
+                            DNI de ambos + partida de nacimiento
+                        </p>
+                        <p><strong>
+                                Hijo mayor de 21 años y hasta 25 años estudiante:
+                            </strong>
+                            DNI de ambos + partida de nacimiento + certificado de estudios
+                        </p>
+                        <p>
+                            <strong>
+                                Hijo incapacitado, a cargo del titular:
+                            </strong>
+                            DNI de ambos + partida de nacimiento + certificado médico de Ministerio de
+                            Salud que certifique enfermedad y grado de incapacidad.
+                        </p>
+                        <p><strong>
+                                Menor a Cargo:
+                            </strong>
+                            DNI de ambos + constancias de guarda Tutela Judicial
+                        </p>
+                        <p>
+                            Seguidamente se le entregara el carnet de Obra Social – Para presentar en toda
+                            ocasión que requiera servicios.
+                        </p>
+                        <p>
+                            ANTE CUALQUIER DUDA CONSULTE A SEDE CENTRAL
+                            DE LUNES A VIERNES DE 9:00 a 17:00 horas
+                            "Telefono": (011)4956-0954/FAX (011)4956-0321
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="tercermodal" tabindex="-1" aria-labelledby="tercermodal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="tercermodal">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>
+                            1-ATENCIÓN PRIMARIA Y SECUNDARIA:
+                            Programas de Prevención Primaria y Secundaria
+                        </h4>
+                        <h4>
+                            COBERTURA AL 100%
+                        </h4>
+                        <p><strong>
+                                Programa Materno Infantil
+                            </strong>
+                        </p>
+                        <p><strong>
+                                Control del Embarazo
+                            </strong>
+                        </p>
+                        <p>
+                            <strong>
+                                Para el control del Recien Nacido
+                            </strong>
+                        </p>
+                        <p class="card-title"> Programa de Prevención del cáncer Femenino.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="cuartomodal" tabindex="-1" aria-labelledby="cuartomodal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="cuartomodal">Atención Secundaria</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <li>
+                                Asistencia ambulatoria.
+                            </li>
+                            <li>
+                                Consultas médicas en consultorio, domicilio e internación.
+                            </li>
+                            <li>
+                                Prácticas y estudios complementarios ambulatorios -diagnósticos y
+                                terapéuticos.
+                            </li>
+                            <li>
+                                Internación 100% en institucional hospital día o domiciliaria.
+                            </li>
+                        </p>
+                        <p><strong>
+                                Salud Mental:
+                            </strong>
+                        </p>
+                        <p>
+                            <li>
+                                Prevención en salud mental.
+                            </li>
+                            <li>
+                                Prestaciones cubiertas.
+                            </li>
+                            <li>
+                                Atención ambulatoria, hasta 30 sesiones cada 12 meses (4
+                                consultas/mensuales)
+                            </li>
+                            <li>
+                                Consulta Psiquiátrica-Psicológica.
+                            </li>
+                            <li>
+                                Psicoterapia de familia y de pareja.
+                            </li>
+                            <li>
+                                Entrevista y tratamiento psicopedagógico.
+                            </li>
+                            <li>
+                                Psicodiagnóstico.
+                            </li>
+                            <li>
+                                Internación Agudos: hasta 30 días cada 12 meses.
+                            </li>
+                            <li>
+                                Hospital de día: hasta 30 días cada 12 meses.
+                            </li>
+                        </p>
+                        <p><strong>
+                                Otros
+                            </strong>
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
     <section id="sitiosinteres" class="section_sitiointeres">
         <h4 class="text-center">SITIOS DE INTERES PARA NUESTROS AFILIADOS</h4>
         <div class="card_sitiodeinteres d-flex flex-md-row flex-column">
@@ -650,10 +682,12 @@
     </section>
 
     <footer class="text-center">
-        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
-            <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
-          </svg></span>
-        <span>Todos  los derechos reservados</span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z" />
+            </svg></span>
+        <span>Todos los derechos reservados</span>
     </footer>
     <script type="text/x-template" id="modal-template">
         <transition name="modal">
