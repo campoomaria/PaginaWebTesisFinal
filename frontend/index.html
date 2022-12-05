@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obra Social</title>
+    <link rel="shortcut icon" href="./assets/img/Ospes.png" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body id="app">
+    <header>
+        <nav class="navbar navbar-expand-lg " style="background-color: #90dbf4c0;">
+            <div class="container-fluid">
+                <a class="navbar-logo" href="./index.html"><img src="./assets/img/Ospes.png" alt="imagenlogo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class=" conteiner_link_nav collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#delegaciones">Delegaciónes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#planmedico">Planes Médicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#sitiosinteres">Sitios de interés</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#contacto">Contacto</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <button class="button_login" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <svg style="width:40px;height:40px" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="assets/img/doctor1.jpg" class="d-block w-100" alt="imagen1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Obra Social para personal</h3>
+                        <p>Estaciones de servicios - Garages - Gomerias -
+                            Playas de estacionamientos y Lavaderos automaticos
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/img/doctoypaciente1.jpg" class="d-block w-100" alt="imagen2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Planes Familiares</h3>
+                        <p>Contamos con distintos planes familiares a tu medida</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/doctorypaciente2.jpg" class="d-block w-100" alt="imagen3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Nuestos Asesores pueden ayudarte en tus consultas</h3>
+                        <p> Telefonos 123456789 - 987456123</p>
+                        <p> Email asesoriaOspes@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </header>
+
+    <section class="modal_login">
+
+        <div v-if="iniciosesion==false" class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="vh-60 d-block">
+                        <div class="container-fluid h-custom">
+                            <div class="container_button_login">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="row d-flex justify-content-center align-items-center h-100">
+                                <img src="./assets/img/Ospes.png" class="mt-3" alt="" style="width: 150px;">
+                                <div>
+                                    <form th:action="@{/logincheck}" method="POST">
+                                        <h4 class="text-black text-center">Ingreso</h4>
+                                        <p th:if="${error !=null}" class="error" th:text="${error}" style="color: red;">
+                                        </p>
+                                        <div class="form-outline mb-4">
+                                            <input type="text" name="username" class="form-control form-control-lg"
+                                                placeholder="Ingrese su usuario" th:value="${username}" />
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <input type="password" name="password" class="form-control form-control-lg"
+                                                placeholder="Contraseña" th:value="${password}" />
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="text-center text-lg-start">
+                                                <button class="button_login "
+                                                    style="padding-left: 2.5rem; padding-right: 2.5rem;"
+                                                    value="Ingresar"><a href="./index.html"
+                                                        class="text-white">Ingresar</a></button>
+                                                <p class="d-flex justify-content-center text-success"><a
+                                                        href="./usuario.html" class="">Registrarse</a></p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div v-else class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="vh-60 d-block">
+                        <div class="container-fluid h-custom">
+                            <div class="container_button_login">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="row d-flex justify-content-center align-items-center h-100 text-center">
+                                <img src="./assets/img/Ospes.png" class="mt-3" alt="" style="width: 80px;">
+                                <h4>¡Bienvenido!</h4>
+                                <div class="container_button_login2 d-flex flex-md-column ">
+                                   <div>
+                                       <a type="button" class="btn btn-outline-primary" href="./farmacias.html">
+                                           <h6>Farmacia</h6>
+                                           <img src="./assets/img/farmacia.png" alt="" style="width: 60px">
+                                       </a>
+                                       <a type="button" class="btn btn-outline-primary" href="./afiliado.html">
+                                           <h6>Afiliados</h6>
+                                           <img src="./assets/img/afiliado.png" alt="" style="width: 60px;">
+                                       </a>
+                                       <a type="button" class="btn btn-outline-primary" href="./afiliado.html" >
+                                           <h6>Ordenes</h6>
+                                           <img src="./assets/img/ordenes.png" alt="" style="width: 50px;">
+                                       </a>
+                                   </div>
+                                   <div>
+                                       <a type="button" class="btn btn-outline-primary" href="./prestaciones.html">
+                                           <h6>Prestaciones</h6>
+                                       <img src="./assets/img/prestaciones.png" alt="" style="width: 70px;">
+                                       </a>
+                                       <a type="button" class="btn btn-outline-primary" href="./institucionesmedicas.html">
+                                           <h6>Instituciones Medicas</h6>
+                                       <img src="./assets/img/institucionmedica.png" alt="" style="width: 50px;">
+                                       </a>
+                                       <a type="button" class="btn btn-outline-primary">
+                                           <h6>Autorización</h6>
+                                       <img src="./assets/img/autorizacion.png" alt="" style="width: 60px;">
+                                       </a>
+                                   </div>
+                                   <div>
+                                       <a type="button" class="btn btn-outline-primary" href="./productos.html">
+                                           <h6>Productos</h6>
+                                       <img src="./assets/img/productos.png" alt="" style="width: 70px;">
+                                       </a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="delegaciones"
+        class="section_delegaciones text-center d-flex flex-column align-content-center mt-5 pt-5 pb-5">
+        <h1>Delegaciones</h1>
+        <div class="d-flex flex-column align-items-center">
+            <div class="card_delegacion d-flex flex-md-row flex-column">
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/bsas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Buenos Aires</h5>
+                            <button id="delegacion1" class="button_delegacion"
+                                @click="showModal(`delegacion1`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/catamarca.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Catamarca</h5>
+                            <button id="delegacion2" class="button_delegacion"
+                                @click="showModal(`delegacion2`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/chubut.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chubut</h5>
+                            <button id="delegacion3" class="button_delegacion"
+                                @click="showModal(`delegacion3`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex flex-md-row flex-column">
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/cordoba.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cordoba</h5>
+                            <button id="delegacion4" class="button_delegacion"
+                                @click="showModal(`delegacion4`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/corrientes.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Corrientes</h5>
+                            <button id="delegacion5" class="button_delegacion"
+                                @click="showModal(`delegacion5`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/Entrerios.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Entre Rios</h5>
+                            <button id="delegacion6" class="button_delegacion"
+                                @click="showModal(`delegacion6`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-md-row flex-column">
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/formosa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Formosa</h5>
+                            <button id="delegacion7" class="button_delegacion"
+                                @click="showModal(`delegacion7`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/jujuy.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jujuy</h5>
+                            <button id="delegacion8" class="button_delegacion"
+                                @click="showModal(`delegacion8`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/lapampa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">La Pampa</h5>
+                            <button id="delegacion9" class="button_delegacion"
+                                @click="showModal(`delegacion9`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex flex-md-row flex-column">
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/larioja.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">La Rioja</h5>
+                            <button id="delegacion10" class="button_delegacion"
+                                @click="showModal(`delegacion10`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/mendoza.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mendoza</h5>
+                            <button id="delegacion11" class="button_delegacion"
+                                @click="showModal(`delegacion11`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/misiones.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Misiones</h5>
+                            <button id="delegacion12" class="button_delegacion"
+                                @click="showModal(`delegacion12`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-md-row flex-column">
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/rionegro.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rio Negro</h5>
+                            <button id="delegacion13" class="button_delegacion"
+                                @click="showModal(`delegacion13`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/salta.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Salta</h5>
+                            <button id="delegacion14" class="button_delegacion"
+                                @click="showModal(`delegacion14`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/sanjuan.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">San Juan</h5>
+                            <button id="delegacion15" class="button_delegacion"
+                                @click="showModal(`delegacion15`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-md-row flex-column">
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/sanluis.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">San Luis</h5>
+                            <button id="delegacion16" class="button_delegacion"
+                                @click="showModal(`delegacion16`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/santiagodelestero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Santiago del Estero</h5>
+                            <button id="delegacion17" class="button_delegacion"
+                                @click="showModal(`delegacion17`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/tierradelfuego.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tierra del Fuego</h5>
+                            <button id="delegacion18" class="button_delegacion"
+                                @click="showModal(`delegacion18`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-md-row flex-column">
+                <div class="sub_card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/tucumán.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tucumán</h5>
+                            <button id="delegacion19" class="button_delegacion"
+                                @click="showModal(`delegacion19`)">Información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <modal class="modal-mask" tabindex="-1" v-if="mostrarmodal===true" @close="mostrarmodal=false">
+                <div class="modal-wrapper">
+                    <div class="modal-container">
+                        <div class="modal-header">
+                            <h4 class="modal-titulo-delegacion" slot="header">Información</h4>
+                        </div>
+                        <div class="modal-body ">
+                            <div class="" slot="body">
+                                <p><strong>Direccion:</strong> {{Direccion}}</p>
+                                <p><strong>Telefono:</strong> {{Telefono}}</p>
+                                <p><strong>Cp:</strong> {{Cp}}</p>
+                                <p><strong>Email:</strong> {{Email}}</p>
+                                <p><strong>Encargado Delegación:</strong> {{EncargadoDelegacion}}</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="modal-default-button" @click="mostrarmodal=false"
+                                slot="footer">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </modal>
+    </section>
+    <section id="planmedico" class="section_planmedico">
+        <h1>Planes Medicos</h1>
+        <div class="grupo_card">
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/doctorypaciente3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">¿Quiénes son los Beneficiarios?</h5>
+                    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#primermodal">
+                        Ver Información
+                    </button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/doctorypaciente4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> ¿Como puede Ud. hacer los trámites de afiliación?</h5>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#segundomodal">
+                        Ver Información
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="grupo_card">
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/doctorypaciente5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> Cobertura P.M.O.</h5>
+                    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#tercermodal">
+                        Ver información
+                    </button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/doctorypaciente6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> Atención Secundaria</h5>
+                    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#cuartomodal">
+                        Ver Información
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="primermodal" tabindex="-1" aria-labelledby="primermodal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="primermodal">Beneficiarios</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-left">
+                        <p>
+                            Son los beneficiarios de nuestra Obra Social según la Ley 23.660 —Art. 9, eltitular
+                            afiliado y su grupo familiar primario,
+                            Entendiéndose por ello a:
+                        </p>
+                        <li>El cónyuge del afiliado/a titular</li>
+                        <li>Los hijos hasta los veintiún (21) años, no emancipados por habilitación
+                            de edad o ejercicio de actividad profesional, comercial o laboral
+                        </li>
+                        <li>Los hijos solteros mayores de veintiún (21) años y hasta los veinticinco
+                            (25) años inclusive, que estén a exclusivo cargo del afiliado titular y que
+                            cursen estudios regulares oficialmente reconocidos por la autoridad
+                            pertinente.</li>
+                        <li>Los hijos incapacitados y a cargo del titular, cualquiera sea su edad y
+                            siempre que acrediten la discapacidad mediante la certificación.
+                        </li>
+                        <li>Los hijos del cónyuge.
+                        </li>
+                        <li>Los menores cuya guarda y tutela haya sido acordada por autoridad judicial, que
+                            reúnan
+                            los requisitos establecidos por la ley.
+                        </li>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="segundomodal" tabindex="-1" aria-labelledby="segundomodal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="segundomodal">Afiliación</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Concurriendo a la Delegación mas próxima a su domicilio allí
+                            Presentara la siguiente documentación:
+                        </p>
+                        <p>
+                            <strong> Titular:</strong>
+                            DNI (Documento Nacional de Identidad)
+                        </p>
+                        <p>
+                            <strong>
+                                Cónyuge:</strong>
+                            DNI de ambos + certificado o libreta de matrimonio
+                        </p>
+                        <p><strong>
+                                Hijo menor de 21 años:
+                            </strong>
+                            DNI de ambos + partida de nacimiento
+                        </p>
+                        <p><strong>
+                                Hijo mayor de 21 años y hasta 25 años estudiante:
+                            </strong>
+                            DNI de ambos + partida de nacimiento + certificado de estudios
+                        </p>
+                        <p>
+                            <strong>
+                                Hijo incapacitado, a cargo del titular:
+                            </strong>
+                            DNI de ambos + partida de nacimiento + certificado médico de Ministerio de
+                            Salud que certifique enfermedad y grado de incapacidad.
+                        </p>
+                        <p><strong>
+                                Menor a Cargo:
+                            </strong>
+                            DNI de ambos + constancias de guarda Tutela Judicial
+                        </p>
+                        <p>
+                            Seguidamente se le entregara el carnet de Obra Social – Para presentar en toda
+                            ocasión que requiera servicios.
+                        </p>
+                        <p>
+                            ANTE CUALQUIER DUDA CONSULTE A SEDE CENTRAL
+                            DE LUNES A VIERNES DE 9:00 a 17:00 horas
+                            "Telefono": (011)4956-0954/FAX (011)4956-0321
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="tercermodal" tabindex="-1" aria-labelledby="tercermodal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="tercermodal">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>
+                            1-ATENCIÓN PRIMARIA Y SECUNDARIA:
+                            Programas de Prevención Primaria y Secundaria
+                        </h4>
+                        <h4>
+                            COBERTURA AL 100%
+                        </h4>
+                        <p><strong>
+                                Programa Materno Infantil
+                            </strong>
+                        </p>
+                        <p><strong>
+                                Control del Embarazo
+                            </strong>
+                        </p>
+                        <p>
+                            <strong>
+                                Para el control del Recien Nacido
+                            </strong>
+                        </p>
+                        <p class="card-title"> Programa de Prevención del cáncer Femenino.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="cuartomodal" tabindex="-1" aria-labelledby="cuartomodal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="cuartomodal">Atención Secundaria</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <li>
+                                Asistencia ambulatoria.
+                            </li>
+                            <li>
+                                Consultas médicas en consultorio, domicilio e internación.
+                            </li>
+                            <li>
+                                Prácticas y estudios complementarios ambulatorios -diagnósticos y
+                                terapéuticos.
+                            </li>
+                            <li>
+                                Internación 100% en institucional hospital día o domiciliaria.
+                            </li>
+                        </p>
+                        <p><strong>
+                                Salud Mental:
+                            </strong>
+                        </p>
+                        <p>
+                            <li>
+                                Prevención en salud mental.
+                            </li>
+                            <li>
+                                Prestaciones cubiertas.
+                            </li>
+                            <li>
+                                Atención ambulatoria, hasta 30 sesiones cada 12 meses (4
+                                consultas/mensuales)
+                            </li>
+                            <li>
+                                Consulta Psiquiátrica-Psicológica.
+                            </li>
+                            <li>
+                                Psicoterapia de familia y de pareja.
+                            </li>
+                            <li>
+                                Entrevista y tratamiento psicopedagógico.
+                            </li>
+                            <li>
+                                Psicodiagnóstico.
+                            </li>
+                            <li>
+                                Internación Agudos: hasta 30 días cada 12 meses.
+                            </li>
+                            <li>
+                                Hospital de día: hasta 30 días cada 12 meses.
+                            </li>
+                        </p>
+                        <p><strong>
+                                Otros
+                            </strong>
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sitiosinteres" class="section_sitiointeres">
+        <h1 class="text-center">Sitios de interes para nuestros afiliados</h1>
+        <div class="card_sitiodeinteres d-flex flex-md-row flex-column">
+            <div class="card" style="width: 25rem">
+                <div class="card-body justify-content-center text-center">
+                    <h5 class="card-title">Ministerio de Salud</h5>
+                    <a href="https://www.argentina.gob.ar/salud" title="https://www.argentina.gob.ar/salud">
+                        <img src="./assets/img/minSalud.jpg" class="card-img-top" width="250" height="150"
+                            alt="Ministerio de Salud"></a>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <div class="card-body justify-content-center text-center">
+                    <h5 class="card-title">Superintendecia de Servicios de Salud</h5>
+                    <a href="https://www.sssalud.gob.ar/index/index.php?cat=os&opc=os"
+                        title="https://www.sssalud.gob.ar/">
+                        <img src="assets/img/superintendenciaSalud.jpg" width="250" height="150"
+                            alt="Superintendecia de Servicios de Salud"></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="contacto" class="section_contacto">
+        <div class="container-fluid">
+            <h1>¡Contactenos!</h1>
+            <h4 class="text-center">Por favor ingrese sus datos, un asesor se comunicará con usted a la brevedad</h4>
+            <div class="conteiner-form d-flex justify-content-center align-items-center">
+                <form th:action="@{/logincheck}" method="POST">
+                    <p th:if="${error !=null}" class="error" th:text="${error}" style="color: red;"></p>
+                    <div class="form-outline mb-2">
+                        <input type="text" name="firstname" class="form-control form-control-lg" placeholder="Nombre"
+                            th:value="${firstname}" />
+                    </div>
+                    <div class="form-outline mb-2">
+                        <input type="text" name="lastname" class="form-control form-control-lg" placeholder="Apellido"
+                            th:value="${lastname}" />
+                    </div>
+                    <div class="form-outline mb-2">
+                        <input type="text" name="phone" class="form-control form-control-lg"
+                            placeholder="Número de celular" th:value="${phone}" />
+                    </div>
+                    <div class="form-outline mb-2">
+                        <input type="text" name="mail" class="form-control form-control-lg"
+                            placeholder="Correo electronico" th:value="${mail}" />
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button><a href="/index.html" class=" text-white">Enviar</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z" />
+            </svg></span>
+        <span>Todos los derechos reservados</span>
+    </footer>
+    <script type="text/x-template" id="modal-template">
+        <transition name="modal">
+          <div v-if="show" class="modal-mask">
+            <div class="modal-wrapper">
+              <div class="modal-container">
+                <div class="modal-header">
+                  <slot name="header">
+                    default header
+                  </slot>
+                </div>
+                <div class="modal-body">
+                  <slot name="body">
+                    default body
+                  </slot>
+                </div>
+                <div class="modal-footer">
+                  <slot name="footer">
+                    <button class="modal-default-button" @click="$emit('close')">
+                       Cerrar
+                    </button>
+                  </slot>
+                </div>
+              </div>
+            </div>
+          </div>
+        </transition>
+    </script>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

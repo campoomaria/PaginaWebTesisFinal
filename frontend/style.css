@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Merriweather:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+body {
+  background-image: url("./assets/img/Universoazul2.png");
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+.navbar-logo img {
+  width: 90px;
+  height: auto;
+}
+.conteiner_link_nav a {
+  color: black !important;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.button_login {
+  border: none;
+  background-color: transparent;
+  color: black;
+}
+
+.conteiner_link_nav {
+  text-align: center;
+  padding: 10px;
+}
+
+.tabla_farmacia,
+.tabla_afiliado,
+.tabla_instmed,
+.tabla_prestaciones,
+.tabla_ordenes {
+  border: 1px solid black;
+  text-align: center;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.head_table_farmacia,
+.head_table_instmed,
+.head_table_afiliado,
+.head_table_prestaciones,
+.head_table_ordenes {
+  background-color: #73c8d3;
+  font-weight: 700;
+}
+
+
+.cabeceraproductos,
+.cabecerafarmacia,
+.cabeceraAfiliado,
+.cabeceraordenes,
+.cabecerainstitucionesmedicas,
+.cabeceraprestaciones {
+  background-image: url(./assets/videos/videoportada4.gif);
+  background-repeat: repeat-x;
+  background-size: 450px;
+  height: 180px;
+}
+
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: row;
+}
+.offcanvas-body button {
+  background: none;
+  border: 0;
+}
+.offcanvas-body h1 {
+  color: black;
+}
+
+.modal-body-farmacia {
+  margin: 15px;
+}
+.formfarmacianueva,
+.formproductonuevo,
+.formafiliadonuevo {
+  margin: 5px;
+}
+
+.div-form-farmacia,
+.div-form-afiliado,
+.div-form-producto,
+.div-form-instmedica,
+.div-form-prestacion {
+  margin-bottom: 10px;
+}
+.div-form-farmacia input,
+.div-form-producto input,
+.div-form-instmedica input,
+.div-form-prestacion input {
+  height: auto;
+  width: 100%;
+}
+
+.div-form-producto textarea {
+  resize: none;
+  height: 80px;
+  width: 100%;
+}
+
+#carouselExampleDark {
+  width: 100% !important;
+  height: auto;
+}
+
+#carouselExampleDark img {
+  width: 760px;
+  height: 450px;
+}
+
+.conteiner-form input {
+  width: 400px !important;
+}
+
+.conteiner-form a {
+  text-decoration: none;
+}
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 350px;
+  height: auto;
+  margin: 0px auto;
+  padding: 30px 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  transition: all 0.3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-header {
+  color: black;
+}
+.modal-header h4 {
+  margin-top: 0;
+  color: black;
+  font-weight: 700;
+}
+
+.modal-body {
+  color: black;
+  text-align: start;
+}
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.section_delegaciones {
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+.section_delegaciones h1 {
+  padding-bottom: 20px;
+}
+
+.sub_card {
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.sub_card .card {
+  width: 100px;
+  height: 300px;
+  transition: all 0.25s;
+}
+
+.sub_card .card img {
+  width: auto;
+  height: 300px;
+}
+
+.sub_card button,
+.modal-default-button,
+.section_contacto button,
+.grupo_card .card button {
+  padding: 5px;
+  border: 1px white;
+  border-radius: 15px;
+  background-color: rgb(255, 128, 0);
+  color: white;
+}
+
+.sub_card .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.section_sitiointeres {
+  width: auto;
+  height: 600px;
+  padding: 5px;
+  padding-top: 260px;
+}
+
+.card_sitiodeinteres {
+  margin-top: 100px;
+  padding: 5px;
+  padding-left: 5px;
+  justify-content: space-evenly;
+}
+
+.card_sitiodeinteres .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.section_contacto {
+  height: 550px;
+  width: auto;
+  padding-top: 140px;
+  text-align: center;
+  color: black;
+}
+.section_planmedico {
+  height: 600px;
+  width: auto;
+  text-align: center;
+}
+
+.container_button_login {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.section_planmedico .grupo_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+}
+
+.grupo_card .card {
+  height: auto;
+  margin-right: 50px;
+}
+
+.grupo_card .card img {
+  height: 200px;
+}
+
+.container_button_login2 a {
+  width: 130px;
+  height: 110px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
