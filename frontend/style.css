@@ -163,12 +163,12 @@ body {
   width: 350px;
   height: auto;
   margin: 0px auto;
-  padding: 30px 30px;
+  padding: 30px 40px;
   background: white;
   border-radius: 15px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
-  font-family: Helvetica, Arial, sans-serif;
+  /* font-family: Helvetica, Arial, sans-serif; */
 }
 
 .modal-header {
