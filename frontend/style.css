@@ -18,9 +18,11 @@ body {
 }
 .conteiner_link_nav a {
   color: black !important;
-  font-size: x-large;
+  font-size: large;
   font-weight: 700;
+
 }
+
 
 .button_login {
   border: none;
@@ -30,27 +32,32 @@ body {
 
 .conteiner_link_nav {
   text-align: center;
-  padding: 10px;
+  padding: 30px;
+  
 }
 
 .tabla_farmacia,
 .tabla_afiliado,
 .tabla_instmed,
 .tabla_prestaciones,
-.tabla_ordenes {
+.tabla_ordenes,
+.tabla_rubro,
+.tabla_liquidacion{
   border: 1px solid black;
   text-align: center;
   margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .head_table_farmacia,
 .head_table_instmed,
 .head_table_afiliado,
 .head_table_prestaciones,
-.head_table_ordenes {
+.head_table_ordenes,
+.head_table_rubro,
+.head_table_liquidacion {
   background-color: #73c8d3;
   font-weight: 700;
+
 }
 
 
@@ -59,8 +66,9 @@ body {
 .cabeceraAfiliado,
 .cabeceraordenes,
 .cabecerainstitucionesmedicas,
-.cabeceraprestaciones {
-  background-image: url(./assets/videos/videoportada4.gif);
+.cabeceraprestaciones,
+.cabeceraLiquidacion {
+  background-image: url(./assets/videos/portada5.1.gif);
   background-repeat: repeat-x;
   background-size: 450px;
   height: 180px;
@@ -84,7 +92,9 @@ body {
 }
 .formfarmacianueva,
 .formproductonuevo,
-.formafiliadonuevo {
+.formafiliadonuevo,
+.formrubronuevo,
+.formliquidacionnuevo {
   margin: 5px;
 }
 
@@ -92,13 +102,18 @@ body {
 .div-form-afiliado,
 .div-form-producto,
 .div-form-instmedica,
-.div-form-prestacion {
+.div-form-prestacion,
+.div-form-rubro,
+.div-form-liquidacion {
   margin-bottom: 10px;
 }
 .div-form-farmacia input,
 .div-form-producto input,
 .div-form-instmedica input,
-.div-form-prestacion input {
+.div-form-prestacion input,
+.div-form-rubro input,
+.div-form-liquidacion input 
+{
   height: auto;
   width: 100%;
 }
