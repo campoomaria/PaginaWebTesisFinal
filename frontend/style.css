@@ -42,7 +42,8 @@ body {
 .tabla_prestaciones,
 .tabla_ordenes,
 .tabla_rubro,
-.tabla_liquidacion{
+.tabla_liquidacion,
+.tabla_autorizaciones{
   border: 1px solid black;
   text-align: center;
   margin: auto;
@@ -54,10 +55,10 @@ body {
 .head_table_prestaciones,
 .head_table_ordenes,
 .head_table_rubro,
-.head_table_liquidacion {
+.head_table_liquidacion,
+.head_table_autorizaciones {
   background-color: #73c8d3;
   font-weight: 700;
-
 }
 
 
@@ -72,6 +73,14 @@ body {
   background-repeat: repeat-x;
   background-size: 450px;
   height: 180px;
+}
+
+.tabla_afiliado, .tabla_prestaciones, .tabla_autorizaciones{
+    display: block;
+    overflow-x: auto;
+    /* overflow-y: auto; */
+    width: 90%;
+    height: auto;
 }
 
 

@@ -137,7 +137,7 @@
                                                 <img src="./assets/img/institucionmedica.png" alt=""
                                                     style="width: 50px;">
                                             </a>
-                                            <a type="button" class="btn btn-outline-primary">
+                                            <a type="button" class="btn btn-outline-primary" href="./autorizaciones.html">
                                                 <h6>Autorización</h6>
                                                 <img src="./assets/img/autorizacion.png" alt="" style="width: 60px;">
                                             </a>
@@ -174,8 +174,8 @@
             <div class="col-8">
                 <form class="d-flex" role="buscar">
                     <input class="form-control me-2" type="search" placeholder="Buscar prestacion médica"
-                        aria-label="Search">
-                    <button class="btn btn-secondary" type="button">Buscar</button>
+                        aria-label="Search" id="busquedaPrestacion" v-model="busquedaPrestacion">
+                    <button class="btn btn-secondary" type="button" v-on:click="filtrarPrestaciones">Buscar</button>
                 </form>
             </div>
             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -187,7 +187,7 @@
             <div class="modal-dialog ">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Nueva Farmacia</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Nueva Prestación Médica</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body-prestacion">
@@ -276,20 +276,20 @@
                         <td>id Afiliado</td>
                         <td>id Tipo Prest</td>
                         <td>id Secretario</td>
-                        <!-- <td>Fecha Alta</td> -->
+                        <td>Fecha Alta</td>
                         <td>Fecha Venc</td>
                         <td>Precio</td>
                         <td>id Médico Auditor</td>
                         <td>Fecha Autorización</td>
                         <td>id Inst. Médica</td>
-                        <!--otrainfo <td>Fecha Prestación</td> -->
+                        <td>Fecha Prestación</td>
                         <td>Fecha Baja</td>
                         <td>Estado</td>
                         <td>Acciones</td>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="prestmed in PrestacionesMedicas">
+                    <tr v-for="prestmed in PrestacionesMedicasFiltradas">
                         <td>{{prestmed.idPrestacion}}</td>
                         <td>{{prestmed.idAfiliado}}</td>
                         <td>{{prestmed.idTipoPrestacion}}</td>

@@ -1,4 +1,4 @@
-const { createApp } = Vue
+const { createApp } = Vue;
 createApp({
   components: {
     template: "#modal-template",
@@ -6,12 +6,141 @@ createApp({
   data() {
     return {
       iniciosesion: true,
-      Afiliados:[],
-      Prestaciones:[],
-      Farmacias: [],
-      Productos: [],
+
+      busquedaFarmacia: "",
+      Farmacias: [
+        {
+          idFarmacia: 1,
+          farmacia: "Del Pueblo",
+          cuil: "256786543",
+          domicilio: "Av.Colon 500",
+          provincia: "Tucumán",
+          localidad: "San Miguel de Tucumán",
+          telefono: "4355465",
+          correoElectronico: "delpueblo@hotmail.com",
+          estado: "A",
+        },
+        {
+          idFarmacia: 2,
+          farmacia: "Del Pueblo alem",
+          cuil: "252345673",
+          domicilio: "Av.Alem 100",
+          provincia: "Tucumán",
+          localidad: "San Miguel de Tucumán",
+          telefono: "4351466",
+          correoElectronico: "delpueblo@gmail.com",
+          estado: "A",
+        },
+        {
+          idFarmacia: 3,
+          farmacia: "Rotonda",
+          cuil: "214562345",
+          domicilio: "Lamadrid 3300",
+          provincia: "Tucumán",
+          localidad: "Lules",
+          telefono: "4123433",
+          correoElectronico: "rotondalamadrid@hotmail.com",
+          estado: "A",
+        },
+      ], //donde guardaremos todas las farmacias que viene del back
+      FarmaciasFiltradas: [], //Farmacias filtradas de acuerdo a la busqueda
+
+      busquedaAfiliado: "",
+      Afiliados: [
+        {
+          idUsuario: 1,
+          nombres: "Maria",
+          apellidos: "Campoo",
+          dni: "35678987",
+          sexo: "F",
+          fechaNacimiento: "15/05/1991",
+          usuario: "mariac",
+          password: "mariac1234",
+          domicilio: "Las rosas 123",
+          fechaAlta: "22/12/2022",
+          provincia: "Tucumán",
+          departamento: "Capital",
+          localidad: "San Miguel de Tucumán",
+          telefono: "155678987",
+          email: "mariacampoo@gmail.com",
+          estado: "A",
+          tipoAfiliado: "T",
+          fechaBaja: null,
+          empleador: "Refinor",
+          maxPrestacionesMes: 3,
+        },
+        {
+          idUsuario: 2,
+          nombres: "Carolina",
+          apellidos: "Palomo",
+          dni: "32123456",
+          sexo: "F",
+          fechaNacimiento: "25/04/1989",
+          usuario: "carop",
+          password: "carop1234",
+          domicilio: "Libano 31",
+          fechaAlta: "22/12/2022",
+          provincia: "Tucumán",
+          departamento: "Capital",
+          localidad: "San Miguel de Tucumán",
+          telefono: "154323456",
+          email: "palomoc@hotmail.com",
+          estado: "A",
+          tipoAfiliado: "T",
+          fechaBaja: null,
+          empleador: "Nose",
+          maxPrestacionesMes: 3,
+        },
+        {
+          idUsuario: 3,
+          nombres: "Juan",
+          apellidos: "Paz",
+          dni: "11234567",
+          sexo: "M",
+          fechaNacimiento: "08/02/1958",
+          usuario: "juanpaz",
+          password: "juanp1234",
+          domicilio: "Lavalle 2331",
+          fechaAlta: "22/12/2022",
+          provincia: "Tucumán",
+          departamento: "Capital",
+          localidad: "San Miguel de Tucumán",
+          telefono: "154323456",
+          email: "pazj123@hotmail.com",
+          estado: "A",
+          tipoAfiliado: "H",
+          fechaBaja: null,
+          empleador: "Nose",
+          maxPrestacionesMes: 3,
+        },
+      ],
+      AfiliadosFiltrados: [],
+
+      busquedainstitucionmed: "",
+      institucionesmedicas: [],
+      institucionesMedicasFiltradas: [],
+
       Rubros: [],
-      institucionesMedicas: [],
+
+      busquedaProducto: "",
+      Productos: [],
+      ProductosFiltrados: [],
+
+      busquedaOrden: "",
+      Ordenes: [],
+      OrdenesFiltradas: [],
+
+      busquedaPrestacion: "",
+      Prestaciones: [],
+      PrestacionesMedicasFiltradas: [],
+
+      busquedaLiquidacion: "",
+      Liquidaciones: [],
+      LiquidacionesFiltradas: [],
+
+
+      PrestacionesaAutorizarFiltradas:[],
+
       page: `index`,
 
       //Variables para delegaciones
@@ -27,6 +156,16 @@ createApp({
       EncargadoDelegacion: ``,
     };
   },
+  created() {
+    this.FarmaciasFiltradas = this.Farmacias;
+    this.AfiliadosFiltrados = this.Afiliados;
+    this.institucionesMedicasFiltradas = this.institucionesMedicas;
+    this.ProductosFiltrados = this.Productos;
+    this.OrdenesFiltradas = this.Ordenes;
+    this.PrestacionesMedicasFiltradas = this.Prestaciones;
+    this.LiquidacionesFiltradas = this.Liquidaciones;
+  },
+
   methods: {
     showModal: function (element) {
       // limpio los links (sacando la clase on)
@@ -201,5 +340,76 @@ createApp({
         this.EncargadoDelegacion = `Sanchez Francisco`;
       }
     },
+    filtrarFarmacias: function () {
+      this.FarmaciasFiltradas = this.Farmacias.filter((farm) =>
+        farm.farmacia
+          .toLowerCase()
+          .includes(this.busquedaFarmacia.toLowerCase())
+      );
+    },
+    filtrarAfiliados: function () {
+      this.AfiliadosFiltrados = this.Afiliados.filter(
+        (afil) =>
+          afil.nombres
+            .toLowerCase()
+            .includes(this.busquedaAfiliado.toLowerCase()) ||
+          afil.apellidos
+            .toLowerCase()
+            .includes(this.busquedaAfiliado.toLowerCase()) ||
+          afil.dni.includes(this.busquedaAfiliado)
+      );
+    },
+    filtrarinstitucionmed: function () {
+      this.institucionesMedicasFiltradas = this.institucionesmedicas.filter(
+        (inst) =>
+          inst.institucionMedica
+            .toLowerCase()
+            .includes(this.busquedainstitucionmed.toLowerCase()) ||
+          inst.cuil.includes(this.busquedainstitucionmed)
+      );
+    },
+    filtrarProductos: function () {
+      this.ProductosFiltrados = this.Productos.filter(
+        (prod) =>
+          prod.producto
+            .toLowerCase()
+            .includes(this.busquedaProducto.toLowerCase()) ||
+          prod.fechaVencimiento.includes(this.busquedaProducto)
+      );
+    },
+    filtrarOrdenes: function () {
+      this.OrdenesFiltradas = this.Ordenes.filter(
+        (orden) =>
+          orden.idOrden.includes(this.busquedaOrden.toLowerCase()) ||
+          orden.fechaVencimiento.includes(this.busquedaOrden) ||
+          orden.fechaEmision.includes(this.busquedaOrden) ||
+          orden.fechaAtencion.includes(this.busquedaOrden)
+      );
+    },
+    filtrarPrestaciones: function () {
+      this.PrestacionesMedicasFiltradas = this.Prestaciones.filter(
+        (prest) =>
+          prest.idPrestacion.includes(this.busquedaPrestacion) ||
+          prest.fechaVencimiento.includes(this.busquedaPrestacion) ||
+          prest.fechaAlta.includes(this.busquedaPrestacion) ||
+          prest.fechaBaja.includes(this.busquedaPrestacion) ||
+          prest.prestacion
+            .toLowerCase()
+            .includes(this.busquedaPrestacion.toLowerCase())
+      );
+    },
+    filtrarLiquidaciones: function () {
+      this.LiquidacionesFiltradas = this.Liquidaciones.filter(
+        (Liquida) =>
+          Liquida.idLiquidacion.includes(this.busquedaLiquidacion) ||
+          Liquida.fechaLibramiento.includes(this.busquedaLiquidacion)
+      );
+    },
+    filtrarPrestacionesaAutorizar: function () {
+      this.PrestacionesaAutorizarFiltradas = this.Prestaciones.filter(
+        (autorizar) => autorizar.estado = 'P' //estado sea pendiente de la prestacion
+      );
+    }
+
   },
 }).mount("#app");

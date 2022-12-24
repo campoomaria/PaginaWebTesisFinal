@@ -134,7 +134,7 @@
                                             <h6>Instituciones Medicas</h6>
                                             <img src="./assets/img/institucionmedica.png" alt="" style="width: 50px;">
                                         </a>
-                                        <a type="button" class="btn btn-outline-primary">
+                                        <a type="button" class="btn btn-outline-primary" href="./autorizaciones.html">
                                             <h6>Autorización</h6>
                                             <img src="./assets/img/autorizacion.png" alt="" style="width: 60px;">
                                         </a>
@@ -171,8 +171,8 @@
         <div class="d-flex flex-row m-3 text-center justify-content-around align-items-center">
             <div class="col-8">
                 <form class="d-flex" role="buscar">
-                    <input class="form-control me-2" type="search" placeholder="Buscar Producto" aria-label="Search">
-                    <button class="btn btn-secondary" type="button">Buscar</button>
+                    <input class="form-control me-2" type="search" placeholder="Buscar Producto" aria-label="Search" id="busquedaProducto" v-model="busquedaProducto">
+                    <button class="btn btn-secondary" type="button" v-on:click="filtrarProductos">Buscar</button>
                 </form>
             </div>
             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -247,7 +247,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="prod in Productos">
+                <tr v-for="prod in ProductosFiltrados">
                     <td>{{prod.idProducto}}</td>
                     <td>{{prod.idRubro}}</td>
                     <td>{{prod.producto}}</td>

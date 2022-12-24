@@ -139,7 +139,7 @@
                                                 <img src="./assets/img/institucionmedica.png" alt=""
                                                     style="width: 50px;">
                                             </a>
-                                            <a type="button" class="btn btn-outline-primary">
+                                            <a type="button" class="btn btn-outline-primary" href="./autorizaciones.html">
                                                 <h6>Autorización</h6>
                                                 <img src="./assets/img/autorizacion.png" alt="" style="width: 60px;">
                                             </a>
@@ -167,15 +167,15 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
         <div class="cabeceraAfiliado">
         </div>
         <h1 class="text-center m-2">Afiliados</h1>
         <div class="d-flex flex-row m-3 text-center justify-content-around align-items-center">
             <div class="col-8">
                 <form class="d-flex" role="buscar">
-                    <input class="form-control me-2" type="search" placeholder="Buscar Afiliado" aria-label="Search">
-                    <button class="btn btn-secondary" type="button">Buscar</button>
+                    <input class="form-control me-2" type="search" placeholder="Buscar Afiliado por nombre, apellido o dni" aria-label="Search" id="busquedaAfiliado" v-model="busquedaAfiliado">
+                    <button class="btn btn-secondary" type="button" v-on:click="filtrarAfiliados">Buscar</button>
                 </form>
             </div>
             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -298,34 +298,34 @@
         </div>
 
         <section>
-            <table class="tabla_afiliado table-bordered border-black table-responsive">
+            <table class="tabla_afiliado table-bordered border-black ">
                 <thead class="head_table_afiliado">
                     <tr>
                         <td>Id</td>
                         <td>Nombres</td>
                         <td>Apellidos</td>
                         <td>DNI</td>
-                        <!-- <td>Sexo</td> -->
-                        <!-- <td>Fecha Nacimiento</td> -->
-                        <!-- <td>Usuario</td> -->
-                        <!-- <td>Contraseña</td> -->
+                        <td>Sexo</td>
+                        <td>Fecha Nacimiento</td>
+                        <td>Usuario</td>
+                        <td>Contraseña</td>
                         <td>Domicilio</td>
                         <td>Fecha Alta</td>
-                        <!-- <td>Provincia</td> -->
-                        <!-- <td>Departamento</td> -->
-                        <!-- <td>Localidad</td> -->
-                        <!-- <td>Telefono</td> -->
-                        <!-- <td>Email</td> -->
+                        <td>Provincia</td>
+                        <td>Departamento</td>
+                        <td>Localidad</td>
+                        <td>Telefono</td>
+                        <td>Email</td>
                         <td>Estado</td>
                         <td>TipoAfiliado</td>
-                        <!-- <td>FechaBaja</td> -->
-                        <!-- <td>Empleador</td> -->
+                        <td>FechaBaja</td>
+                        <td>Empleador</td>
                         <td>Cantidad Prestaciones</td>
                         <td>Acciones</td>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="afiliado in Afiliados">
+                    <tr v-for="afiliado in  AfiliadosFiltrados">
                         <td>{{afiliado.idUsuario}}</td>
                         <td>{{afiliado.nombres}}</td>
                         <td>{{afiliado.apellidos}}</td>
@@ -336,11 +336,11 @@
                         <td>{{afiliado.password}}</td>
                         <td>{{afiliado.domicilio}}</td>
                         <td>{{afiliado.fechaAlta}}</td>
-                        <td>{{afiliado.Provincia}}</td>
+                        <td>{{afiliado.provincia}}</td>
                         <td>{{afiliado.departamento}}</td>
                         <td>{{afiliado.localidad}}</td>
                         <td>{{afiliado.telefono}}</td>
-                        <td>{{afiliado.Email}}</td>
+                        <td>{{afiliado.email}}</td>
                         <td>{{afiliado.estado}}</td>
                         <td>{{afiliado.tipoAfiliado}}</td>
                         <td>{{afiliado.fechaBaja}}</td>

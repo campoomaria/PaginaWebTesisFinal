@@ -139,7 +139,7 @@
                                                 <img src="./assets/img/institucionmedica.png" alt=""
                                                     style="width: 50px;">
                                             </a>
-                                            <a type="button" class="btn btn-outline-primary">
+                                            <a type="button" class="btn btn-outline-primary" href="./autorizaciones.html">
                                                 <h6>Autorización</h6>
                                                 <img src="./assets/img/autorizacion.png" alt="" style="width: 60px;">
                                             </a>
@@ -176,8 +176,8 @@
         <div class="d-flex flex-row m-3 text-center justify-content-around align-items-center">
             <div class="col-8">
                 <form class="d-flex" role="buscar">
-                    <input class="form-control me-2" type="search" placeholder="Buscar Farmacia" aria-label="Search">
-                    <button class="btn btn-secondary" type="button">Buscar</button>
+                    <input class="form-control me-2" type="search" placeholder="Buscar Farmacia" aria-label="Search" id="busquedaFarmacias" v-model="busquedaFarmacia">
+                    <button class="btn btn-secondary" type="button" v-on:click="filtrarFarmacias">Buscar</button>
                 </form>
             </div>
             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -193,7 +193,6 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body-farmacia">
-
                         <form action="formfarmacianueva" data-bs-spy="scroll"
                             class="formfarmacianueva d-flex flex-column needs-validation  novalidate">
                             <div class="div-form-farmacia">
@@ -235,15 +234,14 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" aria-label="Show SweetAlert2 success message" @click="alerta"
-                            class="btn btn-primary">Guardar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <section>
-            <table class="tabla_farmacia table-bordered border-black ">
+            <table class="table-responsive tabla_farmacia table-bordered border-black ">
                 <thead class="head_table_farmacia">
                     <tr>
                         <td>Id</td>
@@ -259,15 +257,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="farm in Farmacias">
+                    <tr v-for="farm in FarmaciasFiltradas">
                         <td>{{farm.idFarmacia}}</td>
                         <td>{{farm.farmacia}}</td>
                         <td>{{farm.cuil}}</td>
                         <td>{{farm.domicilio}}</td>
-                        <td>{{farm.Provincia}}</td>
+                        <td>{{farm.provincia}}</td>
                         <td>{{farm.localidad}}</td>
-                        <td>{{farm.Telefono}}</td>
-                        <td>{{farm.Email}}</td>
+                        <td>{{farm.telefono}}</td>
+                        <td>{{farm.correoElectronico}}</td>
                         <td>{{farm.estado}}</td>
                         <td>
                             <div class="m-2">

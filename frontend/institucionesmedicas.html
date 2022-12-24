@@ -135,7 +135,7 @@
                                             <h6>Instituciones Medicas</h6>
                                             <img src="./assets/img/institucionmedica.png" alt="" style="width: 50px;">
                                         </a>
-                                        <a type="button" class="btn btn-outline-primary">
+                                        <a type="button" class="btn btn-outline-primary" href="./autorizaciones.html">
                                             <h6>Autorización</h6>
                                             <img src="./assets/img/autorizacion.png" alt="" style="width: 60px;">
                                         </a>
@@ -171,8 +171,8 @@
             <div class="col-8">
                 <form class="d-flex" role="buscar">
                     <input class="form-control me-2" type="search" placeholder="Buscar Institucion Médica"
-                        aria-label="Search">
-                    <button class="btn btn-secondary" type="button">Buscar</button>
+                        aria-label="Search" id="busquedainstitucionmed" v-model="busquedainstitucionmed">
+                    <button class="btn btn-secondary" type="button" v-on:click="filtrarinstitucionmed">Buscar</button>
                 </form>
             </div>
             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -225,7 +225,7 @@
         <table class="tabla_instmed table-bordered border-black ">
             <thead class="head_table_instmed">
                 <tr>
-                    <td>Identificador</td>
+                    <td>Id</td>
                     <td>Institución Médica</td>
                     <td>Dirección</td>
                     <td>Cuil</td>
@@ -234,12 +234,12 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="instmedica in InstitucionesMedicas">
+                <tr v-for="instmedica in institucionesMedicasFiltradas">
                     <td>{{instmedica.idInstitucionesMedicas}}</td>
                     <td>{{instmedica.institucionMedica}}</td>
                     <td>{{instmedica.cuil}}</td>
-                    <td>{{instmedica.Direccion}}</td>
-                    <td>{{instmedica.Telefono}}</td>
+                    <td>{{instmedica.direccion}}</td>
+                    <td>{{instmedica.telefono}}</td>
                     <td>
                         <div class="m-2">
                             <button type="button" title="Modificar" class="btn btn-sm">

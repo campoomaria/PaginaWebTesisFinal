@@ -139,7 +139,7 @@
                                                 <img src="./assets/img/institucionmedica.png" alt=""
                                                     style="width: 50px;">
                                             </a>
-                                            <a type="button" class="btn btn-outline-primary">
+                                            <a type="button" class="btn btn-outline-primary" href="./autorizaciones.html">
                                                 <h6>Autorización</h6>
                                                 <img src="./assets/img/autorizacion.png" alt="" style="width: 60px;">
                                             </a>
@@ -174,7 +174,7 @@
         <div class="d-flex flex-row m-3 text-center justify-content-around align-items-center">
             <div class="col-8">
                 <form class="d-flex" role="buscar">
-                    <input class="form-control me-2" type="search" placeholder="Buscar Ordenes" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar Ordenes por id, fecha emision, vencimiento o Atención" aria-label="Search" id="busquedaOrden" v-model="busquedaOrden">
                     <button class="btn btn-secondary" type="button">Buscar</button>
                 </form>
             </div>
@@ -257,7 +257,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="orden in Ordenes">
+                    <tr v-for="orden in OrdenesFiltradas">
                         <td>{{orden.idOrden}}</td>
                         <td>{{orden.idAfiliado}}</td>
                         <td>{{orden.idMedicoExterno}}</td>
